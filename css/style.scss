@@ -9,10 +9,8 @@
 .logo-block {
   .logo-and-menu {
     height: 100px;
-
     .logo-and-menu__logo {
       height: 80%;
-
       img {
         display: inline-block;
         vertical-align: middle;
@@ -20,7 +18,6 @@
     }
   }
 }
-
 .logo-and-menu__menu {
   height: 80%;
 
@@ -32,85 +29,76 @@
     background-color: white;
   }
 }
-
 .top-about-company {
   position: relative;
-
   &__left {
     top: 0;
     left: 0;
     position: absolute;
   }
-
   &__right {
     background-color: #171717;
-
     &__inner {
       padding: 0 100px 0 200px;
       position: relative;
-
       &:hover {
         h1 {
           span {
             &:first-of-type {
               &:after {
-                position: absolute;
-                top: 32px;
-                content: "";
+                width: 80%;
                 display: block;
-                width: 5%;
-                height: 2px;
-                background-color: #4a4c4c;
-                transition: width 2s, height 2s, background-color 2s, transform 2s;
+
               }
             }
           }
         }
       }
-
       h1 {
         font-family: 'Gobold';
         font-size: 25px;
         font-variant: all-small-caps;
-
         span {
           &:first-of-type {
             display: inline-block;
             color: #4a4c4c;
+            &:after {
+              -webkit-transition: 1s;
+              transition: 1s;
+              width: 0;
+              height: 2px;
+              background-color: #4a4c4c;
+/*              position: absolute;*/
+              top: 32px;
+              content: "";
+            }
           }
-
           &:last-of-type {
             color: #82878a;
           }
         }
       }
-
       p {
         color: #82878a;
         font-family: 'Open Sans';
       }
     }
   }
-
   &__pagination {
     padding-top: 80px;
     padding-bottom: 80px;
     font-family: 'Open Sans';
-
     span {
       &:first-of-type {
         display: inline-block;
         color: #4a4c4c;
       }
-
       &:last-of-type {
         color: #82878a;
       }
     }
-
     &__next {
       position: relative;
-
       span {
         &:first-of-type {
           width: 30px;
@@ -119,7 +107,6 @@
           display: inline-block;
           vertical-align: middle;
         }
-
         &:last-of-type {
           position: absolute;
           left: 85%;
@@ -131,7 +118,6 @@
           vertical-align: middle;
         }
       }
-
       .right {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);

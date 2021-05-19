@@ -32,14 +32,8 @@
       padding: 0 100px 0 200px;
       position: relative; }
       .top-about-company__right__inner:hover h1 span:first-of-type:after {
-        position: absolute;
-        top: 32px;
-        content: "";
-        display: block;
-        width: 5%;
-        height: 2px;
-        background-color: #4a4c4c;
-        transition: width 2s, height 2s, background-color 2s, transform 2s; }
+        width: 80%;
+        display: block; }
       .top-about-company__right__inner h1 {
         font-family: 'Gobold';
         font-size: 25px;
@@ -47,6 +41,15 @@
         .top-about-company__right__inner h1 span:first-of-type {
           display: inline-block;
           color: #4a4c4c; }
+          .top-about-company__right__inner h1 span:first-of-type:after {
+            -webkit-transition: 1s;
+            transition: 1s;
+            width: 0;
+            height: 2px;
+            background-color: #4a4c4c;
+            /*              position: absolute;*/
+            top: 32px;
+            content: ""; }
         .top-about-company__right__inner h1 span:last-of-type {
           color: #82878a; }
       .top-about-company__right__inner p {
