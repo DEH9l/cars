@@ -1,4 +1,5 @@
 @import url(bootstrap.css);
+@import url(../fonts/stylesheet.css);
 .black-bg {
   background-color: #0a0a0a; }
 
@@ -28,23 +29,33 @@
   .top-about-company__right {
     background-color: #171717; }
     .top-about-company__right__inner {
-      padding: 0 100px 0 200px; }
-      .top-about-company__right__inner h1 span:first-of-type {
-        display: inline-block;
-        color: #4a4c4c; }
-        .top-about-company__right__inner h1 span:first-of-type:after {
-          content: "";
-          display: block;
-          width: 80%;
-          height: 2px;
-          background-color: #4a4c4c; }
-      .top-about-company__right__inner h1 span:last-of-type {
-        color: #82878a; }
+      padding: 0 100px 0 200px;
+      position: relative; }
+      .top-about-company__right__inner:hover h1 span:first-of-type:after {
+        position: absolute;
+        top: 32px;
+        content: "";
+        display: block;
+        width: 5%;
+        height: 2px;
+        background-color: #4a4c4c;
+        transition: width 2s, height 2s, background-color 2s, transform 2s; }
+      .top-about-company__right__inner h1 {
+        font-family: 'Gobold';
+        font-size: 25px;
+        font-variant: all-small-caps; }
+        .top-about-company__right__inner h1 span:first-of-type {
+          display: inline-block;
+          color: #4a4c4c; }
+        .top-about-company__right__inner h1 span:last-of-type {
+          color: #82878a; }
       .top-about-company__right__inner p {
-        color: #82878a; }
+        color: #82878a;
+        font-family: 'Open Sans'; }
   .top-about-company__pagination {
     padding-top: 80px;
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+    font-family: 'Open Sans'; }
     .top-about-company__pagination span:first-of-type {
       display: inline-block;
       color: #4a4c4c; }
@@ -70,6 +81,10 @@
       .top-about-company__pagination__next .right {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg); }
+
+.our-service {
+  background-image: url("../images/mers-bg.png");
+  background-size: cover; }
 
 @media screen and (max-width: 992px) {
   .top-about-company__right__inner {

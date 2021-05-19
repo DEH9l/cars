@@ -1,4 +1,5 @@
 @import "bootstrap.css";
+@import "../fonts/stylesheet.css";
 
 .black-bg {
   background-color: #0a0a0a;
@@ -46,20 +47,36 @@
 
     &__inner {
       padding: 0 100px 0 200px;
+      position: relative;
+
+      &:hover {
+        h1 {
+          span {
+            &:first-of-type {
+              &:after {
+                position: absolute;
+                top: 32px;
+                content: "";
+                display: block;
+                width: 5%;
+                height: 2px;
+                background-color: #4a4c4c;
+                transition: width 2s, height 2s, background-color 2s, transform 2s;
+              }
+            }
+          }
+        }
+      }
 
       h1 {
+        font-family: 'Gobold';
+        font-size: 25px;
+        font-variant: all-small-caps;
+
         span {
           &:first-of-type {
             display: inline-block;
             color: #4a4c4c;
-
-            &:after {
-              content: "";
-              display: block;
-              width: 80%;
-              height: 2px;
-              background-color: #4a4c4c;
-            }
           }
 
           &:last-of-type {
@@ -70,6 +87,7 @@
 
       p {
         color: #82878a;
+        font-family: 'Open Sans';
       }
     }
   }
@@ -77,6 +95,7 @@
   &__pagination {
     padding-top: 80px;
     padding-bottom: 80px;
+    font-family: 'Open Sans';
 
     span {
       &:first-of-type {
@@ -121,6 +140,12 @@
   }
 }
 
+.our-service {
+  background-image: url("../images/mers-bg.png");
+  background-size: cover;
+}
+
+
 @media screen and(max-width: 992px) {
   .top-about-company__right__inner {
     padding: 0 50px 0 100px;
@@ -130,11 +155,12 @@
     padding-bottom: 20px;
   }
 }
-@media screen and(max-width: 768px){
-  .top-about-company__left{
+
+@media screen and(max-width: 768px) {
+  .top-about-company__left {
     position: unset;
   }
   .top-about-company__right__inner {
-    padding: 0 ;
+    padding: 0;
   }
 }
