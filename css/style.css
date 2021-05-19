@@ -1,0 +1,88 @@
+@import url(bootstrap.css);
+.black-bg {
+  background-color: #0a0a0a; }
+
+.logo-block .logo-and-menu {
+  height: 100px; }
+  .logo-block .logo-and-menu .logo-and-menu__logo {
+    height: 80%; }
+    .logo-block .logo-and-menu .logo-and-menu__logo img {
+      display: inline-block;
+      vertical-align: middle; }
+
+.logo-and-menu__menu {
+  height: 80%; }
+  .logo-and-menu__menu span {
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: white; }
+
+.top-about-company {
+  position: relative; }
+  .top-about-company__left {
+    top: 0;
+    left: 0;
+    position: absolute; }
+  .top-about-company__right {
+    background-color: #171717; }
+    .top-about-company__right__inner {
+      padding: 0 100px 0 200px; }
+      .top-about-company__right__inner h1 span:first-of-type {
+        display: inline-block;
+        color: #4a4c4c; }
+        .top-about-company__right__inner h1 span:first-of-type:after {
+          content: "";
+          display: block;
+          width: 80%;
+          height: 2px;
+          background-color: #4a4c4c; }
+      .top-about-company__right__inner h1 span:last-of-type {
+        color: #82878a; }
+      .top-about-company__right__inner p {
+        color: #82878a; }
+  .top-about-company__pagination {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    .top-about-company__pagination span:first-of-type {
+      display: inline-block;
+      color: #4a4c4c; }
+    .top-about-company__pagination span:last-of-type {
+      color: #82878a; }
+    .top-about-company__pagination__next {
+      position: relative; }
+      .top-about-company__pagination__next span:first-of-type {
+        width: 30px;
+        height: 3px;
+        background: #bcbcbc;
+        display: inline-block;
+        vertical-align: middle; }
+      .top-about-company__pagination__next span:last-of-type {
+        position: absolute;
+        left: 85%;
+        top: 35%;
+        border: solid #bcbcbc;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        vertical-align: middle; }
+      .top-about-company__pagination__next .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); }
+
+@media screen and (max-width: 992px) {
+  .top-about-company__right__inner {
+    padding: 0 50px 0 100px; }
+
+  .top-about-company__pagination {
+    padding-top: 20px;
+    padding-bottom: 20px; } }
+@media screen and (max-width: 768px) {
+  .top-about-company__left {
+    position: unset; }
+
+  .top-about-company__right__inner {
+    padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
