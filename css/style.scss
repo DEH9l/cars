@@ -1,16 +1,39 @@
 @import "bootstrap.css";
 @import "../fonts/stylesheet.css";
 
+
+@mixin Gobold {
+  font-family: 'Gobold';
+}
+
+@mixin opensans {
+  font-family: 'Open Sans';
+}
+
 .black-bg {
   background-color: #0a0a0a;
 }
 
+.underline {
+  display: inline-block;
+  color: #4a4c4c;
 
+  &:after {
+    height: 2px;
+    top: 32px;
+    content: "";
+    display: block;
+    width: 80%;
+    background-color: white;
+  }
+}
 .logo-block {
   .logo-and-menu {
     height: 100px;
+
     .logo-and-menu__logo {
       height: 80%;
+
       img {
         display: inline-block;
         vertical-align: middle;
@@ -18,6 +41,7 @@
     }
   }
 }
+
 .logo-and-menu__menu {
   height: 80%;
 
@@ -29,124 +53,188 @@
     background-color: white;
   }
 }
+
 .top-about-company {
   position: relative;
+  padding-bottom: 100px;
+
   &__left {
     top: 0;
     left: 0;
     position: absolute;
   }
+
   &__right {
     background-color: #171717;
+
     &__inner {
       padding: 0 100px 0 200px;
       position: relative;
+      .underline {
+        display: inline-block;
+        color: #4a4c4c;
+        &:after {
+          -webkit-transition: 1s;
+          transition: 1s;
+          opacity: 0;
+          height: 2px;
+          top: 32px;
+          content: "";
+          display: block;
+          width: 0;
+        }
+      }
       &:hover {
         h1 {
-          span {
-            &:first-of-type {
-              &:after {
-                width: 80%;
-                display: block;
-
-              }
+          .underline {
+            &:after {
+              background-color: #4a4c4c;
+              opacity: 100%;
+              width: 80%;
             }
           }
         }
       }
+
       h1 {
-        font-family: 'Gobold';
+        @include Gobold();
         font-size: 25px;
         font-variant: all-small-caps;
+
         span {
-          &:first-of-type {
-            display: inline-block;
-            color: #4a4c4c;
-            &:after {
-              -webkit-transition: 1s;
-              transition: 1s;
-              width: 0;
-              height: 2px;
-              background-color: #4a4c4c;
-/*              position: absolute;*/
-              top: 32px;
-              content: "";
-            }
-          }
-          &:last-of-type {
-            color: #82878a;
-          }
+          color: #82878a;
         }
       }
+
       p {
         color: #82878a;
-        font-family: 'Open Sans';
+        @include opensans;
       }
     }
   }
+
   &__pagination {
     padding-top: 80px;
     padding-bottom: 80px;
-    font-family: 'Open Sans';
+    @include opensans;
+
     span {
       &:first-of-type {
         display: inline-block;
         color: #4a4c4c;
       }
+
       &:last-of-type {
         color: #82878a;
       }
     }
-    &__next {
-      position: relative;
-      span {
-        &:first-of-type {
-          width: 30px;
-          height: 3px;
-          background: #bcbcbc;
-          display: inline-block;
-          vertical-align: middle;
-        }
-        &:last-of-type {
-          position: absolute;
-          left: 85%;
-          top: 35%;
-          border: solid #bcbcbc;
-          border-width: 0 3px 3px 0;
-          display: inline-block;
-          padding: 5px;
-          vertical-align: middle;
-        }
-      }
-      .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
+  }
+}
+
+
+
+.pagination__next {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  span {
+    &:first-of-type {
+      width: 20px;
+      height: 3px;
+      background: #bcbcbc;
+      display: inline-block;
+      position: absolute;
+      top: 19.5px;
+      left: 10%;
+    }
+
+    &:last-of-type {
+      border: solid #bcbcbc;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 5px;
+      width: 10px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 14.5px;
+      right: 25%;
     }
   }
 }
 
-.our-service {
-  background-image: url("../images/mers-bg.png");
-  background-size: cover;
+
+.service {
+  padding-bottom: 100px;
+  .weddings__bg{
+    background-image: url("../images/audi-bg.png");
+    background-position: center;
+  }
+  .our-service {
+    background-image: url("../images/mers-bg.png");
+    background-position: center;
+  }
+
+  &__inner {
+    margin-left: 160px;
+
+    & > div {
+      padding-top: 185px;
+    }
+
+    .header-text {
+      @include Gobold;
+      font-size: 25px;
+      color: white;
+    }
+
+    p {
+      @include opensans;
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: (70%);
+    .underline{
+      color: white;
+    }
+    &:hover {
+      background-color: #9e171d;
+
+      .underline {
+        color: black;
+      }
+    }
+
+    .pagination__next {
+      border: 1px solid #bcbcbc;
+    }
+  }
 }
 
+  @media screen and(max-width: 992px) {
+    .top-about-company__right__inner {
+      padding: 0 50px 0 100px;
+    }
+    .top-about-company__pagination {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
 
-@media screen and(max-width: 992px) {
-  .top-about-company__right__inner {
-    padding: 0 50px 0 100px;
+  @media screen and(max-width: 768px) {
+    .top-about-company__left {
+      position: unset;
+    }
+    .top-about-company__right__inner {
+      padding: 15px;
+    }
   }
-  .top-about-company__pagination {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-@media screen and(max-width: 768px) {
-  .top-about-company__left {
-    position: unset;
-  }
-  .top-about-company__right__inner {
-    padding: 0;
-  }
-}
