@@ -177,6 +177,10 @@
     background-image: url("../images/mers-bg.png");
     background-position: center;
   }
+  .tours{
+    background-image: url("../images/mers-bg2.png");
+    background-position: center;
+  }
 
   &__inner {
     margin-left: 160px;
@@ -218,6 +222,82 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+.tests{
+  padding-bottom: 100px;
+  .weddings{
+    background-image: url("../images/audi-bg.png");
+    background-position: center;
+    height: 600px;
+  }
+  .our-service {
+    background-image: url("../images/mers-bg.png");
+    background-position: center;
+    height: 600px;
+  }
+  .tours{
+    background-image: url("../images/mers-bg2.png");
+    background-position: center;
+    height: 600px;
+  }
+
+  .service__inner {
+
+    & > div {
+      padding-top: 185px;
+    }
+
+    .header-text {
+      @include Gobold;
+      font-size: 25px;
+      color: white;
+    }
+
+    p {
+      @include opensans;
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  .service__bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: (70%);
+    .underline{
+      color: white;
+    }
+    &:hover {
+      background-color: #9e171d;
+      .underline {
+        color: black;
+      }
+    }
+
+    .pagination__next {
+      border: 1px solid #bcbcbc;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
   @media screen and(max-width: 992px) {
     .top-about-company__right__inner {

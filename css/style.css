@@ -112,6 +112,9 @@
   .service .our-service {
     background-image: url("../images/mers-bg.png");
     background-position: center; }
+  .service .tours {
+    background-image: url("../images/mers-bg2.png");
+    background-position: center; }
   .service__inner {
     margin-left: 160px; }
     .service__inner > div {
@@ -136,6 +139,44 @@
       .service__bg:hover .underline {
         color: black; }
     .service__bg .pagination__next {
+      border: 1px solid #bcbcbc; }
+
+.tests {
+  padding-bottom: 100px; }
+  .tests .weddings {
+    background-image: url("../images/audi-bg.png");
+    background-position: center;
+    height: 600px; }
+  .tests .our-service {
+    background-image: url("../images/mers-bg.png");
+    background-position: center;
+    height: 600px; }
+  .tests .tours {
+    background-image: url("../images/mers-bg2.png");
+    background-position: center;
+    height: 600px; }
+  .tests .service__inner > div {
+    padding-top: 185px; }
+  .tests .service__inner .header-text {
+    font-family: 'Gobold';
+    font-size: 25px;
+    color: white; }
+  .tests .service__inner p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: white; }
+  .tests .service__bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 70%; }
+    .tests .service__bg .underline {
+      color: white; }
+    .tests .service__bg:hover {
+      background-color: #9e171d; }
+      .tests .service__bg:hover .underline {
+        color: black; }
+    .tests .service__bg .pagination__next {
       border: 1px solid #bcbcbc; }
 
 @media screen and (max-width: 992px) {
