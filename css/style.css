@@ -3,6 +3,17 @@
 .black-bg {
   background-color: #0a0a0a; }
 
+.underline {
+  display: inline-block;
+  color: #4a4c4c; }
+  .underline:after {
+    height: 2px;
+    top: 32px;
+    content: "";
+    display: block;
+    width: 80%;
+    background-color: white; }
+
 .logo-block .logo-and-menu {
   height: 100px; }
   .logo-block .logo-and-menu .logo-and-menu__logo {
@@ -21,7 +32,8 @@
     background-color: white; }
 
 .top-about-company {
-  position: relative; }
+  position: relative;
+  padding-bottom: 100px; }
   .top-about-company__left {
     top: 0;
     left: 0;
@@ -31,26 +43,27 @@
     .top-about-company__right__inner {
       padding: 0 100px 0 200px;
       position: relative; }
-      .top-about-company__right__inner:hover h1 span:first-of-type:after {
-        width: 80%;
-        display: block; }
+      .top-about-company__right__inner .underline {
+        display: inline-block;
+        color: #4a4c4c; }
+        .top-about-company__right__inner .underline:after {
+          -webkit-transition: 1s;
+          transition: 1s;
+          opacity: 0;
+          height: 2px;
+          top: 32px;
+          content: "";
+          display: block;
+          width: 0; }
+      .top-about-company__right__inner:hover h1 .underline:after {
+        background-color: #4a4c4c;
+        opacity: 100%;
+        width: 80%; }
       .top-about-company__right__inner h1 {
         font-family: 'Gobold';
         font-size: 25px;
         font-variant: all-small-caps; }
-        .top-about-company__right__inner h1 span:first-of-type {
-          display: inline-block;
-          color: #4a4c4c; }
-          .top-about-company__right__inner h1 span:first-of-type:after {
-            -webkit-transition: 1s;
-            transition: 1s;
-            width: 0;
-            height: 2px;
-            background-color: #4a4c4c;
-            /*              position: absolute;*/
-            top: 32px;
-            content: ""; }
-        .top-about-company__right__inner h1 span:last-of-type {
+        .top-about-company__right__inner h1 span {
           color: #82878a; }
       .top-about-company__right__inner p {
         color: #82878a;
@@ -64,30 +77,66 @@
       color: #4a4c4c; }
     .top-about-company__pagination span:last-of-type {
       color: #82878a; }
-    .top-about-company__pagination__next {
-      position: relative; }
-      .top-about-company__pagination__next span:first-of-type {
-        width: 30px;
-        height: 3px;
-        background: #bcbcbc;
-        display: inline-block;
-        vertical-align: middle; }
-      .top-about-company__pagination__next span:last-of-type {
-        position: absolute;
-        left: 85%;
-        top: 35%;
-        border: solid #bcbcbc;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 5px;
-        vertical-align: middle; }
-      .top-about-company__pagination__next .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg); }
 
-.our-service {
-  background-image: url("../images/mers-bg.png");
-  background-size: cover; }
+.pagination__next {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  .pagination__next span:first-of-type {
+    width: 20px;
+    height: 3px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 19.5px;
+    left: 10%; }
+  .pagination__next span:last-of-type {
+    border: solid #bcbcbc;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 14.5px;
+    right: 25%; }
+
+.service {
+  padding-bottom: 100px; }
+  .service .weddings {
+    background-image: url("../images/audi-bg.png");
+    background-position: center; }
+  .service .our-service {
+    background-image: url("../images/mers-bg.png");
+    background-position: center; }
+  .service__inner {
+    margin-left: 160px; }
+    .service__inner > div {
+      padding-top: 185px; }
+    .service__inner .header-text {
+      font-family: 'Gobold';
+      font-size: 25px;
+      color: white; }
+    .service__inner p {
+      font-family: 'Open Sans';
+      font-size: 14px;
+      color: white; }
+  .service__bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 70%; }
+    .service__bg .underline {
+      color: white; }
+    .service__bg:hover {
+      background-color: #9e171d; }
+      .service__bg:hover .underline {
+        color: black; }
+    .service__bg .pagination__next {
+      border: 1px solid #bcbcbc; }
 
 @media screen and (max-width: 992px) {
   .top-about-company__right__inner {
@@ -101,6 +150,6 @@
     position: unset; }
 
   .top-about-company__right__inner {
-    padding: 0; } }
+    padding: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
