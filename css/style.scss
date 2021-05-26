@@ -10,6 +10,10 @@
   font-family: 'Open Sans';
 }
 
+@mixin service-height {
+  height: 606px;
+}
+
 .black-bg {
   background-color: #0a0a0a;
 }
@@ -27,6 +31,7 @@
     background-color: white;
   }
 }
+
 .logo-block {
   .logo-and-menu {
     height: 100px;
@@ -70,9 +75,11 @@
     &__inner {
       padding: 0 100px 0 200px;
       position: relative;
+
       .underline {
         display: inline-block;
         color: #4a4c4c;
+
         &:after {
           -webkit-transition: 1s;
           transition: 1s;
@@ -84,6 +91,7 @@
           width: 0;
         }
       }
+
       &:hover {
         h1 {
           .underline {
@@ -132,7 +140,6 @@
 }
 
 
-
 .pagination__next {
   height: 45px;
   width: 45px;
@@ -169,151 +176,136 @@
 
 .service {
   padding-bottom: 100px;
-  .weddings{
+
+  .weddings {
     background-image: url("../images/audi-bg.png");
     background-position: center;
+    @include service-height;
+    position: relative;
+    z-index: 0;
+    &:before {
+      z-index: 1;
+      position: absolute;
+      top:0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%;
+    }
+  &:hover{
+    &:before{
+      background-color: red;
+    }
+    .underline {
+      color:  #171717;
+    }
   }
+  }
+
   .our-service {
     background-image: url("../images/mers-bg.png");
     background-position: center;
-  }
-  .tours{
-    background-image: url("../images/mers-bg2.png");
-    background-position: center;
-  }
-
-  &__inner {
-    margin-left: 160px;
-
-    & > div {
-      padding-top: 185px;
+    @include service-height;
+    position: relative;
+    z-index: 0;
+    &:before {
+      z-index: 1;
+      position: absolute;
+      top:0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%;
     }
-
-    .header-text {
-      @include Gobold;
-      font-size: 25px;
-      color: white;
-    }
-
-    p {
-      @include opensans;
-      font-size: 14px;
-      color: white;
-    }
-  }
-
-  &__bg {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: (70%);
-    .underline{
-      color: white;
-    }
-    &:hover {
-      background-color: #9e171d;
-      .underline {
-        color: black;
+    &:hover{
+      &:before{
+        background-color: red;
       }
+      .underline {
+        color:  #171717;
+      }
+    }
+  }
+
+    .tours {
+      background-image: url("../images/mers-bg2.png");
+      background-position: center;
+      @include service-height;
+      position: relative;
+      z-index: 0;
+      &:before {
+        z-index: 1;
+        position: absolute;
+        top:0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: inline-block;
+        opacity: 50%;
+      }
+      &:hover{
+        &:before{
+          background-color: red;
+        }
+        .underline {
+          color:  #171717;
+        }
+      }
+    }
+
+    .underline {
+      color: white;
     }
 
     .pagination__next {
       border: 1px solid #bcbcbc;
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-.tests{
-  padding-bottom: 100px;
-  .weddings{
-    background-image: url("../images/audi-bg.png");
-    background-position: center;
-    height: 600px;
-  }
-  .our-service {
-    background-image: url("../images/mers-bg.png");
-    background-position: center;
-    height: 600px;
-  }
-  .tours{
-    background-image: url("../images/mers-bg2.png");
-    background-position: center;
-    height: 600px;
-  }
-
-  .service__inner {
-
-    & > div {
-      padding-top: 185px;
+      position: absolute;
+      bottom: 50px;
     }
 
-    .header-text {
-      @include Gobold;
-      font-size: 25px;
+    .service__inner {
+      position: relative;
+      z-index: 2;
+      padding-right: 1rem;
       color: white;
-    }
+      @include service-height;
+      & > div {
+        padding-top: 185px;
+      }
 
-    p {
-      @include opensans;
-      font-size: 14px;
-      color: white;
-    }
-  }
+      .header-text {
+        @include Gobold;
+        font-size: 25px;
+      }
 
-  .service__bg {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: (70%);
-    .underline{
-      color: white;
-    }
-    &:hover {
-      background-color: #9e171d;
-      .underline {
-        color: black;
+      p {
+        @include opensans;
+        font-size: 14px;
       }
     }
+  }
 
-    .pagination__next {
-      border: 1px solid #bcbcbc;
-    }
+
+@media screen and(max-width: 992px) {
+  .top-about-company__right__inner {
+    padding: 0 50px 0 100px;
+  }
+  .top-about-company__pagination {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-  @media screen and(max-width: 992px) {
-    .top-about-company__right__inner {
-      padding: 0 50px 0 100px;
-    }
-    .top-about-company__pagination {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
+@media screen and(max-width: 768px) {
+  .top-about-company__left {
+    position: unset;
   }
-
-  @media screen and(max-width: 768px) {
-    .top-about-company__left {
-      position: unset;
-    }
-    .top-about-company__right__inner {
-      padding: 15px;
-    }
+  .top-about-company__right__inner {
+    padding: 15px;
   }
+}

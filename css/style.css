@@ -108,76 +108,84 @@
   padding-bottom: 100px; }
   .service .weddings {
     background-image: url("../images/audi-bg.png");
-    background-position: center; }
+    background-position: center;
+    height: 606px;
+    position: relative;
+    z-index: 0; }
+    .service .weddings:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%; }
+    .service .weddings:hover:before {
+      background-color: red; }
+    .service .weddings:hover .underline {
+      color: #171717; }
   .service .our-service {
     background-image: url("../images/mers-bg.png");
-    background-position: center; }
+    background-position: center;
+    height: 606px;
+    position: relative;
+    z-index: 0; }
+    .service .our-service:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%; }
+    .service .our-service:hover:before {
+      background-color: red; }
+    .service .our-service:hover .underline {
+      color: #171717; }
   .service .tours {
     background-image: url("../images/mers-bg2.png");
-    background-position: center; }
-  .service__inner {
-    margin-left: 160px; }
-    .service__inner > div {
+    background-position: center;
+    height: 606px;
+    position: relative;
+    z-index: 0; }
+    .service .tours:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%; }
+    .service .tours:hover:before {
+      background-color: red; }
+    .service .tours:hover .underline {
+      color: #171717; }
+  .service .underline {
+    color: white; }
+  .service .pagination__next {
+    border: 1px solid #bcbcbc;
+    position: absolute;
+    bottom: 50px; }
+  .service .service__inner {
+    position: relative;
+    z-index: 2;
+    padding-right: 1rem;
+    color: white;
+    height: 606px; }
+    .service .service__inner > div {
       padding-top: 185px; }
-    .service__inner .header-text {
+    .service .service__inner .header-text {
       font-family: 'Gobold';
-      font-size: 25px;
-      color: white; }
-    .service__inner p {
+      font-size: 25px; }
+    .service .service__inner p {
       font-family: 'Open Sans';
-      font-size: 14px;
-      color: white; }
-  .service__bg {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 70%; }
-    .service__bg .underline {
-      color: white; }
-    .service__bg:hover {
-      background-color: #9e171d; }
-      .service__bg:hover .underline {
-        color: black; }
-    .service__bg .pagination__next {
-      border: 1px solid #bcbcbc; }
-
-.tests {
-  padding-bottom: 100px; }
-  .tests .weddings {
-    background-image: url("../images/audi-bg.png");
-    background-position: center;
-    height: 600px; }
-  .tests .our-service {
-    background-image: url("../images/mers-bg.png");
-    background-position: center;
-    height: 600px; }
-  .tests .tours {
-    background-image: url("../images/mers-bg2.png");
-    background-position: center;
-    height: 600px; }
-  .tests .service__inner > div {
-    padding-top: 185px; }
-  .tests .service__inner .header-text {
-    font-family: 'Gobold';
-    font-size: 25px;
-    color: white; }
-  .tests .service__inner p {
-    font-family: 'Open Sans';
-    font-size: 14px;
-    color: white; }
-  .tests .service__bg {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 70%; }
-    .tests .service__bg .underline {
-      color: white; }
-    .tests .service__bg:hover {
-      background-color: #9e171d; }
-      .tests .service__bg:hover .underline {
-        color: black; }
-    .tests .service__bg .pagination__next {
-      border: 1px solid #bcbcbc; }
+      font-size: 14px; }
 
 @media screen and (max-width: 992px) {
   .top-about-company__right__inner {
