@@ -20,15 +20,15 @@
 
 .underline {
   display: inline-block;
-  color: #4a4c4c;
+  position: relative;
 
   &:after {
     height: 2px;
-    top: 32px;
+    left: 0;
+    position: absolute;
+    bottom: -10%;
     content: "";
-    display: block;
-    width: 80%;
-    background-color: white;
+    width: 0;
   }
 }
 
@@ -76,29 +76,26 @@
       padding: 0 100px 0 200px;
       position: relative;
 
-      .underline {
-        display: inline-block;
-        color: #4a4c4c;
-
-        &:after {
-          -webkit-transition: 1s;
-          transition: 1s;
-          opacity: 0;
-          height: 2px;
-          top: 32px;
-          content: "";
-          display: block;
-          width: 0;
-        }
+      &:after {
+        -webkit-transition: 1s;
+        transition: 1s;
+        opacity: 0;
+        height: 2px;
+        top: 32px;
+        content: "";
+        display: block;
+        width: 0;
       }
 
       &:hover {
         h1 {
           .underline {
+            display: inline-block;
+
             &:after {
               background-color: #4a4c4c;
-              opacity: 100%;
               width: 80%;
+              transition: 1s;
             }
           }
         }
@@ -150,24 +147,24 @@
   span {
     &:first-of-type {
       width: 20px;
-      height: 3px;
+      height: 1px;
       background: #bcbcbc;
       display: inline-block;
       position: absolute;
-      top: 19.5px;
+      top: 21px;
       left: 10%;
     }
 
     &:last-of-type {
-      border: solid #bcbcbc;
-      border-width: 0 3px 3px 0;
+      border-right: 1px solid grey;
+      border-bottom: 1px solid grey;
       display: inline-block;
       padding: 5px;
       width: 10px;
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
       position: absolute;
-      top: 14.5px;
+      top: 16px;
       right: 25%;
     }
   }
@@ -183,10 +180,11 @@
     @include service-height;
     position: relative;
     z-index: 0;
+
     &:before {
       z-index: 1;
       position: absolute;
-      top:0;
+      top: 0;
       background-color: black;
       width: 100%;
       height: 100%;
@@ -194,14 +192,24 @@
       display: inline-block;
       opacity: 50%;
     }
-  &:hover{
-    &:before{
-      background-color: red;
-    }
+
     .underline {
-      color:  #171717;
+      &:after {
+        display: inline-block;
+        background-color: white;
+        width: 80%;
+      }
     }
-  }
+
+    &:hover {
+      &:before {
+        background-color: red;
+      }
+
+      .underline {
+        color: #171717;
+      }
+    }
   }
 
   .our-service {
@@ -210,10 +218,11 @@
     @include service-height;
     position: relative;
     z-index: 0;
+
     &:before {
       z-index: 1;
       position: absolute;
-      top:0;
+      top: 0;
       background-color: black;
       width: 100%;
       height: 100%;
@@ -221,75 +230,326 @@
       display: inline-block;
       opacity: 50%;
     }
-    &:hover{
-      &:before{
+
+    .underline {
+      &:after {
+        display: inline-block;
+        background-color: white;
+        width: 80%;
+      }
+    }
+
+    &:hover {
+      &:before {
         background-color: red;
       }
+
       .underline {
-        color:  #171717;
+        color: #171717;
       }
     }
   }
 
-    .tours {
-      background-image: url("../images/mers-bg2.png");
-      background-position: center;
-      @include service-height;
-      position: relative;
-      z-index: 0;
-      &:before {
-        z-index: 1;
-        position: absolute;
-        top:0;
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        content: '';
-        display: inline-block;
-        opacity: 50%;
-      }
-      &:hover{
-        &:before{
-          background-color: red;
-        }
-        .underline {
-          color:  #171717;
-        }
-      }
+  .tours {
+    background-image: url("../images/mers-bg2.png");
+    background-position: center;
+    @include service-height;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%;
     }
 
     .underline {
-      color: white;
+      &:after {
+        display: inline-block;
+        background-color: white;
+        width: 80%;
+      }
     }
 
-    .pagination__next {
-      border: 1px solid #bcbcbc;
-      position: absolute;
-      bottom: 50px;
-    }
-
-    .service__inner {
-      position: relative;
-      z-index: 2;
-      padding-right: 1rem;
-      color: white;
-      @include service-height;
-      & > div {
-        padding-top: 185px;
+    &:hover {
+      &:before {
+        background-color: red;
       }
 
-      .header-text {
-        @include Gobold;
-        font-size: 25px;
-      }
-
-      p {
-        @include opensans;
-        font-size: 14px;
+      .underline {
+        color: #171717;
       }
     }
   }
 
+  .underline {
+    color: white;
+  }
+
+  .pagination__next {
+    border: 1px solid #bcbcbc;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .service__inner {
+    position: relative;
+    z-index: 2;
+    padding-right: 1rem;
+
+    color: white;
+    @include service-height;
+
+    & > div {
+      padding-top: 185px;
+    }
+
+    .header-text {
+      @include Gobold;
+      font-size: 25px;
+    }
+
+    p {
+      @include opensans;
+      font-size: 14px;
+    }
+  }
+}
+
+.our-fleet {
+  &__head {
+    color: #9e171d;
+    font-size: 40px;
+    margin-block-end: 0;
+    @include Gobold();
+    font-variant: all-small-caps;
+
+    .underline {
+      color: #0e0e0e;
+    }
+  }
+
+  &__about-cars {
+    @include opensans;
+    color: #969a9c;
+    font-size: 13px;
+  }
+
+  &__cars-block {
+    @include Gobold;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+
+    .prevslide {
+      position: absolute;
+      left: -2%;
+      border: 1px solid grey;
+      top: 30%;
+      z-index: 2;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(180deg);
+
+      span {
+        &:first-of-type {
+          width: 20px;
+          height: 1px;
+          background: #bcbcbc;
+          display: inline-block;
+          position: absolute;
+          top: 21px;
+          left: 10%;
+        }
+
+        &:last-of-type {
+          border-right: 1px solid grey;
+          border-bottom: 1px solid grey;
+          display: inline-block;
+          padding: 5px;
+          width: 10px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          position: absolute;
+          top: 16px;
+          right: 25%;
+        }
+      }
+
+      &:hover {
+        border: solid red 1px;
+
+        span {
+          &:last-of-type {
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+          }
+
+          &:first-of-type {
+            background: red;
+          }
+        }
+      }
+    }
+
+    .nextslide {
+      position: absolute;
+      right: -3%;
+      border: 1px solid grey;
+      top: 30%;
+      z-index: 2;
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+
+      span {
+        &:first-of-type {
+          width: 20px;
+          height: 1px;
+          background: #bcbcbc;
+          display: inline-block;
+          position: absolute;
+          top: 21px;
+          left: 10%;
+        }
+
+        &:last-of-type {
+          border-right: 1px solid grey;
+          border-bottom: 1px solid grey;
+          display: inline-block;
+          padding: 5px;
+          width: 10px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          position: absolute;
+          top: 16px;
+          right: 25%;
+        }
+      }
+
+      &:hover {
+        border: solid red 1px;
+
+        span {
+          &:last-of-type {
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+          }
+
+          &:first-of-type {
+            background: red;
+          }
+        }
+      }
+    }
+
+
+    .our-fleet__about-cars__item3, .our-fleet__about-cars__item2,
+    .our-fleet__about-cars__item1 {
+      position: relative;
+
+      .car-params {
+        display: none;
+        position: absolute;
+        bottom: 60px;
+        height: 40%;
+        left: 0;
+        background-color: red;
+        opacity: 80%;
+      }
+
+      .car-params-text {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        height: 40%;
+        color: white;
+        font-size: 13px;
+        @include opensans;
+        display: none;
+        p{
+          margin-block-end: 0;
+          &:first-of-type{
+            margin-top: 20px;
+          }
+        }
+      }
+
+      &:hover {
+        .car-params, .car-params-text {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .underline {
+      &:after {
+        background-color: #9e171d;
+        display: inline-block;
+        width: 80%;
+        bottom: 0;
+      }
+    }
+  }
+}
+.contact{
+  background-color: #161616;
+  .contact-block{
+    &__title{
+      @include Gobold;
+      font-size: 40px;
+      .underline{
+        display: none;
+      }
+    }
+    &__disc{
+      font-size: 13px;
+      color: #82878a;
+      @include opensans;
+    }
+    form{
+      p{
+        @include opensans;
+        font-size: 13px;
+        color: #82878a;
+      }
+    }
+  }
+  &:hover{
+    .underline{
+      display: inline-block;
+      &:after{
+        width: 80%;
+        transition: 1s;
+        background-color: #9e171d;
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 1140px) {
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    left: 0;
+    p{
+      &:first-of-type{
+        margin-top: 10px;
+      }
+    }
+  }
+}
 
 @media screen and(max-width: 992px) {
   .top-about-company__right__inner {
@@ -299,6 +559,19 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    left: 0;
+      font-size: 1rem;
+    p{
+        margin-block-end: 1em;
+    }
+  }
+  .our-fleet__cars-block .nextslide {
+    right: 0;
+  }
+  .our-fleet__cars-block .prevslide {
+    left: 0;
+  }
 }
 
 @media screen and(max-width: 768px) {
@@ -307,5 +580,13 @@
   }
   .top-about-company__right__inner {
     padding: 15px;
+  }
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    p{
+      margin-block-end: 0;
+      &:first-of-type{
+        margin-top: 0;
+      }
+    }
   }
 }
