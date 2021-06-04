@@ -323,36 +323,14 @@
 }
 
 .our-fleet {
-  &__head {
-    color: #9e171d;
-    font-size: 40px;
-    margin-block-end: 0;
-    @include Gobold();
-    font-variant: all-small-caps;
-
-    .underline {
-      color: #0e0e0e;
-    }
-  }
-
-  &__about-cars {
-    @include opensans;
-    color: #969a9c;
-    font-size: 13px;
-  }
-
-  &__cars-block {
-    @include Gobold;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bolder;
+  .our-fleet-inner {
     position: relative;
 
     .prevslide {
       position: absolute;
-      left: -2%;
+      left: -15%;
       border: 1px solid grey;
-      top: 30%;
+      top: 40%;
       z-index: 2;
       height: 50px;
       width: 50px;
@@ -403,9 +381,9 @@
 
     .nextslide {
       position: absolute;
-      right: -3%;
+      right: -15%;
       border: 1px solid grey;
-      top: 30%;
+      top: 40%;
       z-index: 2;
       display: inline-block;
       vertical-align: middle;
@@ -452,6 +430,32 @@
         }
       }
     }
+  }
+
+  &__head {
+    color: #9e171d;
+    font-size: 40px;
+    margin-block-end: 0;
+    @include Gobold();
+    font-variant: all-small-caps;
+
+    .underline {
+      color: #0e0e0e;
+    }
+  }
+
+  &__about-cars {
+    @include opensans;
+    color: #969a9c;
+    font-size: 13px;
+  }
+
+  &__cars-block {
+    @include Gobold;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
 
 
     .our-fleet__about-cars__item3, .our-fleet__about-cars__item2,
@@ -532,6 +536,7 @@
         font-size: 13px;
         color: #82878a;
       }
+
       input[type="checkbox" i] {
         background-color: #161616;
         appearance: none;
@@ -554,6 +559,7 @@
         background-color: white;
         transform: rotate(310deg);
       }
+
       input[type="checkbox" i]:checked:before {
         display: inline-block;
         position: absolute;
@@ -565,9 +571,11 @@
         background-color: white;
         transform: rotate(50deg);
       }
-      .vehicle-type{
+
+      .vehicle-type {
         position: relative;
-        &:before{
+
+        &:before {
           position: absolute;
           content: "";
           display: inline-block;
@@ -579,7 +587,8 @@
           border-bottom: 1px solid #9e171d;
           transform: rotate(320deg);
         }
-        &:after{
+
+        &:after {
           position: absolute;
           content: "";
           display: inline-block;
@@ -589,7 +598,8 @@
           top: 0;
           background-color: #82878a;
         }
-        select{
+
+        select {
           border: 1px solid #82878a;
           color: #82878a;
           background-color: transparent;
@@ -600,6 +610,7 @@
       }
     }
   }
+
   &:hover {
     .underline {
       display: inline-block;
@@ -614,14 +625,21 @@
 }
 
 
-
-
-
-
-
 @media screen and(max-width: 1200px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     height: 50%;
+  }
+  .our-fleet {
+    position: relative;
+  }
+  .our-fleet-inner {
+    position: static;
+  }
+  .our-fleet .our-fleet-inner .nextslide {
+    right: 10%;
+  }
+  .our-fleet .our-fleet-inner .prevslide {
+    left: 10%;
   }
 }
 
@@ -654,10 +672,10 @@
       margin-block-end: 1em;
     }
   }
-  .our-fleet__cars-block .nextslide {
+  .our-fleet .our-fleet-inner .nextslide {
     right: 0;
   }
-  .our-fleet__cars-block .prevslide {
+  .our-fleet .our-fleet-inner .prevslide {
     left: 0;
   }
 }
@@ -677,5 +695,24 @@
         margin-top: 0;
       }
     }
+
+    .our-fleet .our-fleet-inner .nextslide {
+      right: 2%;
+      top: 40%;
+    }
+
+    .our-fleet .our-fleet-inner .prevslide {
+      left: 2%;
+      top: 40%;
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .our-fleet .our-fleet-inner .nextslide {
+    right: 0;
+  }
+  .our-fleet .our-fleet-inner .prevslide {
+    left: 0;
   }
 }

@@ -198,6 +198,81 @@
       font-family: 'Open Sans';
       font-size: 14px; }
 
+.our-fleet .our-fleet-inner {
+  position: relative; }
+  .our-fleet .our-fleet-inner .prevslide {
+    position: absolute;
+    left: -15%;
+    border: 1px solid grey;
+    top: 40%;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(180deg); }
+    .our-fleet .our-fleet-inner .prevslide span:first-of-type {
+      width: 20px;
+      height: 1px;
+      background: #bcbcbc;
+      display: inline-block;
+      position: absolute;
+      top: 21px;
+      left: 10%; }
+    .our-fleet .our-fleet-inner .prevslide span:last-of-type {
+      border-right: 1px solid grey;
+      border-bottom: 1px solid grey;
+      display: inline-block;
+      padding: 5px;
+      width: 10px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 16px;
+      right: 25%; }
+    .our-fleet .our-fleet-inner .prevslide:hover {
+      border: solid red 1px; }
+      .our-fleet .our-fleet-inner .prevslide:hover span:last-of-type {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red; }
+      .our-fleet .our-fleet-inner .prevslide:hover span:first-of-type {
+        background: red; }
+  .our-fleet .our-fleet-inner .nextslide {
+    position: absolute;
+    right: -15%;
+    border: 1px solid grey;
+    top: 40%;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px; }
+    .our-fleet .our-fleet-inner .nextslide span:first-of-type {
+      width: 20px;
+      height: 1px;
+      background: #bcbcbc;
+      display: inline-block;
+      position: absolute;
+      top: 21px;
+      left: 10%; }
+    .our-fleet .our-fleet-inner .nextslide span:last-of-type {
+      border-right: 1px solid grey;
+      border-bottom: 1px solid grey;
+      display: inline-block;
+      padding: 5px;
+      width: 10px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 16px;
+      right: 25%; }
+    .our-fleet .our-fleet-inner .nextslide:hover {
+      border: solid red 1px; }
+      .our-fleet .our-fleet-inner .nextslide:hover span:last-of-type {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red; }
+      .our-fleet .our-fleet-inner .nextslide:hover span:first-of-type {
+        background: red; }
 .our-fleet__head {
   color: #9e171d;
   font-size: 40px;
@@ -216,79 +291,6 @@
   text-transform: uppercase;
   font-weight: bolder;
   position: relative; }
-  .our-fleet__cars-block .prevslide {
-    position: absolute;
-    left: -2%;
-    border: 1px solid grey;
-    top: 30%;
-    z-index: 2;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    transform: rotate(180deg); }
-    .our-fleet__cars-block .prevslide span:first-of-type {
-      width: 20px;
-      height: 1px;
-      background: #bcbcbc;
-      display: inline-block;
-      position: absolute;
-      top: 21px;
-      left: 10%; }
-    .our-fleet__cars-block .prevslide span:last-of-type {
-      border-right: 1px solid grey;
-      border-bottom: 1px solid grey;
-      display: inline-block;
-      padding: 5px;
-      width: 10px;
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      position: absolute;
-      top: 16px;
-      right: 25%; }
-    .our-fleet__cars-block .prevslide:hover {
-      border: solid red 1px; }
-      .our-fleet__cars-block .prevslide:hover span:last-of-type {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red; }
-      .our-fleet__cars-block .prevslide:hover span:first-of-type {
-        background: red; }
-  .our-fleet__cars-block .nextslide {
-    position: absolute;
-    right: -3%;
-    border: 1px solid grey;
-    top: 30%;
-    z-index: 2;
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
-    height: 50px; }
-    .our-fleet__cars-block .nextslide span:first-of-type {
-      width: 20px;
-      height: 1px;
-      background: #bcbcbc;
-      display: inline-block;
-      position: absolute;
-      top: 21px;
-      left: 10%; }
-    .our-fleet__cars-block .nextslide span:last-of-type {
-      border-right: 1px solid grey;
-      border-bottom: 1px solid grey;
-      display: inline-block;
-      padding: 5px;
-      width: 10px;
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      position: absolute;
-      top: 16px;
-      right: 25%; }
-    .our-fleet__cars-block .nextslide:hover {
-      border: solid red 1px; }
-      .our-fleet__cars-block .nextslide:hover span:last-of-type {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red; }
-      .our-fleet__cars-block .nextslide:hover span:first-of-type {
-        background: red; }
   .our-fleet__cars-block .our-fleet__about-cars__item3, .our-fleet__cars-block .our-fleet__about-cars__item2,
   .our-fleet__cars-block .our-fleet__about-cars__item1 {
     position: relative; }
@@ -409,7 +411,19 @@
 
 @media screen and (max-width: 1200px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
-    height: 50%; } }
+    height: 50%; }
+
+  .our-fleet {
+    position: relative; }
+
+  .our-fleet-inner {
+    position: static; }
+
+  .our-fleet .our-fleet-inner .nextslide {
+    right: 10%; }
+
+  .our-fleet .our-fleet-inner .prevslide {
+    left: 10%; } }
 @media screen and (max-width: 1140px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     left: 0;
@@ -430,10 +444,10 @@
     .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p {
       margin-block-end: 1em; }
 
-  .our-fleet__cars-block .nextslide {
+  .our-fleet .our-fleet-inner .nextslide {
     right: 0; }
 
-  .our-fleet__cars-block .prevslide {
+  .our-fleet .our-fleet-inner .prevslide {
     left: 0; } }
 @media screen and (max-width: 768px) {
   .top-about-company__left {
@@ -445,6 +459,18 @@
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p {
     margin-block-end: 0; }
     .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type {
-      margin-top: 0; } }
+      margin-top: 0; }
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text .our-fleet .our-fleet-inner .nextslide, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text .our-fleet .our-fleet-inner .nextslide, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text .our-fleet .our-fleet-inner .nextslide {
+    right: 2%;
+    top: 40%; }
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text .our-fleet .our-fleet-inner .prevslide, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text .our-fleet .our-fleet-inner .prevslide, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text .our-fleet .our-fleet-inner .prevslide {
+    left: 2%;
+    top: 40%; } }
+@media screen and (max-width: 576px) {
+  .our-fleet .our-fleet-inner .nextslide {
+    right: 0; }
+
+  .our-fleet .our-fleet-inner .prevslide {
+    left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
