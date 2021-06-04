@@ -477,9 +477,11 @@
         font-size: 13px;
         @include opensans;
         display: none;
-        p{
+
+        p {
           margin-block-end: 0;
-          &:first-of-type{
+
+          &:first-of-type {
             margin-top: 20px;
           }
         }
@@ -504,33 +506,105 @@
     }
   }
 }
-.contact{
+
+.contact {
   background-color: #161616;
-  .contact-block{
-    &__title{
+
+  .contact-block {
+    &__title {
       @include Gobold;
       font-size: 40px;
-      .underline{
+
+      .underline {
         display: none;
       }
     }
-    &__disc{
+
+    &__disc {
       font-size: 13px;
       color: #82878a;
       @include opensans;
     }
-    form{
-      p{
+
+    form {
+      p {
         @include opensans;
         font-size: 13px;
         color: #82878a;
       }
+      input[type="checkbox" i] {
+        background-color: #161616;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #9e171d;
+      }
+
+      input[type="checkbox" i]:checked:after {
+        display: inline-block;
+        position: absolute;
+        bottom: 9px;
+        right: -5px;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        transform: rotate(310deg);
+      }
+      input[type="checkbox" i]:checked:before {
+        display: inline-block;
+        position: absolute;
+        bottom: 6px;
+        left: -3px;
+        content: "";
+        width: 13px;
+        height: 2px;
+        background-color: white;
+        transform: rotate(50deg);
+      }
+      .vehicle-type{
+        position: relative;
+        &:before{
+          position: absolute;
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          right: 10px;
+          top: 10px;
+          border-left: 1px solid #9e171d;
+          border-bottom: 1px solid #9e171d;
+          transform: rotate(320deg);
+        }
+        &:after{
+          position: absolute;
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 1px;
+          right: 30px;
+          top: 0;
+          background-color: #82878a;
+        }
+        select{
+          border: 1px solid #82878a;
+          color: #82878a;
+          background-color: transparent;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
+      }
     }
   }
-  &:hover{
-    .underline{
+  &:hover {
+    .underline {
       display: inline-block;
-      &:after{
+
+      &:after {
         width: 80%;
         transition: 1s;
         background-color: #9e171d;
@@ -540,11 +614,24 @@
 }
 
 
+
+
+
+
+
+@media screen and(max-width: 1200px) {
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    height: 50%;
+  }
+}
+
 @media screen and(max-width: 1140px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     left: 0;
-    p{
-      &:first-of-type{
+    height: 45%;
+
+    p {
+      &:first-of-type {
         margin-top: 10px;
       }
     }
@@ -561,9 +648,10 @@
   }
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     left: 0;
-      font-size: 1rem;
-    p{
-        margin-block-end: 1em;
+    font-size: 1rem;
+
+    p {
+      margin-block-end: 1em;
     }
   }
   .our-fleet__cars-block .nextslide {
@@ -582,9 +670,10 @@
     padding: 15px;
   }
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
-    p{
+    p {
       margin-block-end: 0;
-      &:first-of-type{
+
+      &:first-of-type {
         margin-top: 0;
       }
     }

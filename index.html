@@ -147,14 +147,26 @@
             <div class="contact-block col-lg-7 d-flex flex-column">
                 <p class="contact-block__title col-1 underline text-white text-uppercase fw-bold">contact</p>
                 <p class="contact-block__disc">Tick boxes on short form</p>
-                <form action="" autocomplete="on" method="get" name="contact-form">
-                    <label class="d-flex">
+                <form class="d-flex flex-column" action="" autocomplete="on" method="get" name="contact-form">
+                    <label class="col-6 d-flex justify-content-between">
                         <p>Baby Seat Required</p>  <input type="checkbox" value="baby-seat" name="car-options">
                         <p>Extra Luggage</p><input type="checkbox" value="extra luggage" name="car-options">
                     </label>
+                    <label for="vehicle-type">Vehicle Type </label>
+                    <div class="col-6 vehicle-type">
+                        <select class="p-1 ps-3 w-100" id="vehicle-type" name="vehicle type">
+                            <option value="Vehicle Type" disabled selected hidden>Vehicle Type</option>
+                            <option value="audi-q7">Audi q7</option>
+                            <option value="chrysler-300c">Chrysler 300c</option>
+                            <option value="smart-fortwo">Smart fortwo</option>
+                        </select>
+                    </div>
+                    <label class="col-6 pt-5">
+                        <span>Name</span>
+                        <input type="text" name="name-form">
+                    </label>
                 </form>
             </div>
-
         </div>
     </article>
 </section>

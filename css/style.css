@@ -342,6 +342,64 @@
     font-family: 'Open Sans';
     font-size: 13px;
     color: #82878a; }
+  .contact .contact-block form input[type="checkbox" i] {
+    background-color: #161616;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9e171d; }
+  .contact .contact-block form input[type="checkbox" i]:checked:after {
+    display: inline-block;
+    position: absolute;
+    bottom: 9px;
+    right: -5px;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(310deg); }
+  .contact .contact-block form input[type="checkbox" i]:checked:before {
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: -3px;
+    content: "";
+    width: 13px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(50deg); }
+  .contact .contact-block form .vehicle-type {
+    position: relative; }
+    .contact .contact-block form .vehicle-type:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      right: 10px;
+      top: 10px;
+      border-left: 1px solid #9e171d;
+      border-bottom: 1px solid #9e171d;
+      transform: rotate(320deg); }
+    .contact .contact-block form .vehicle-type:after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+      right: 30px;
+      top: 0;
+      background-color: #82878a; }
+    .contact .contact-block form .vehicle-type select {
+      border: 1px solid #82878a;
+      color: #82878a;
+      background-color: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
   .contact:hover .underline {
     display: inline-block; }
     .contact:hover .underline:after {
@@ -349,9 +407,13 @@
       transition: 1s;
       background-color: #9e171d; }
 
+@media screen and (max-width: 1200px) {
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    height: 50%; } }
 @media screen and (max-width: 1140px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
-    left: 0; }
+    left: 0;
+    height: 45%; }
     .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type {
       margin-top: 10px; } }
 @media screen and (max-width: 992px) {
