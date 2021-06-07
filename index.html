@@ -143,34 +143,49 @@
         </div>
     </article>
     <article class="contact">
-        <div class="container d-flex py-md-5">
-            <div class="contact-block col-lg-7 d-flex flex-column">
-                <p class="contact-block__title col-1 underline text-white text-uppercase fw-bold">contact</p>
+        <div class="container d-flex row py-md-5 m-auto">
+            <div class="contact-block col-lg-7 col-12d-flex flex-column">
+                <p class="contact-block__title underline text-white text-uppercase fw-bold">contact</p>
                 <p class="contact-block__disc">Tick boxes on short form</p>
                 <form class="d-flex flex-column" action="" autocomplete="on" method="get" name="contact-form">
-                    <label class="col-6 d-flex justify-content-between">
+                    <label class="col-md-6 col-12 d-flex justify-content-between">
                         <p>Baby Seat Required</p>  <input type="checkbox" value="baby-seat" name="car-options">
                         <p>Extra Luggage</p><input type="checkbox" value="extra luggage" name="car-options">
                     </label>
                     <label for="vehicle-type">Vehicle Type </label>
-                    <div class="col-6 vehicle-type">
-                        <select class="p-1 ps-3 w-100" id="vehicle-type" name="vehicle type">
+                    <div class="col-md-6 col-12 vehicle-type ">
+                        <select class="p-1 ps-3 col-12" id="vehicle-type" name="vehicle type">
                             <option value="Vehicle Type" disabled selected hidden>Vehicle Type</option>
                             <option value="audi-q7">Audi q7</option>
                             <option value="chrysler-300c">Chrysler 300c</option>
                             <option value="smart-fortwo">Smart fortwo</option>
                         </select>
                     </div>
-                    <div class="email-and-name col-12 pt-5">
-                        <label class="col-8">
+                    <div class="email-and-name col-12 pt-5 d-flex flex-wrap">
+                        <label class="col-md-5 col-12 d-inline-block">
                             <p class="mb-1">Name</p>
-                            <input required class="" type="text" name="name-form">
+                            <input required class="col-12" type="text" name="name-form">
                         </label>
-                        <label class="col-4">
+                        <label class="col-md-7 col-12 d-inline-block ps-md-4">
                             <p class="mb-1">Email Address</p>
-                            <input required class="" type="email" name="email-form"></label>
+                            <input required class="col-12" type="email" name="email-form">
+                        </label>
                     </div>
+                    <div class="details col-12 d-flex  mt-5">
+                        <label class="col-12 d-inline-block">
+                            <p class="mb-1">Details</p>
+                            <textarea rows="3" name="form-details" class="w-100"></textarea>
+                        </label>
+                    </div>
+                    <button class="col-md-2 py-1 mt-2" type="submit">SUBMIT</button>
                 </form>
+            </div>
+            <div class="contact__your-estimate col-lg-4 offset-lg-1 d-flex flex-column">
+                <p class="contact__your-estimate__head"><span class="underline text-white">Your</span> estimate</p>
+                <p class="contact__your-estimate__sum text-white pt-lg-5">1500.00 $</p>
+                <p class="contact__your-estimate__discription pt-lg-5">Tolls addedif used, see price guide for more information
+                    and special events premiums </p>
+                <p class="contact__your-estimate__another pt-lg-5">Plan another trip</p>
             </div>
         </div>
     </article>

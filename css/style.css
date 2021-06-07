@@ -393,7 +393,7 @@
       right: 30px;
       top: 0;
       background-color: #82878a; }
-    .contact .contact-block form .vehicle-type select {
+    .contact .contact-block form .vehicle-type select, .contact .contact-block form .vehicle-type button {
       border: 1px solid #82878a;
       color: #82878a;
       background-color: transparent;
@@ -405,14 +405,51 @@
     content: "*";
     display: inline-block;
     color: red; }
-  .contact .contact-block form select:focus, .contact .contact-block form input:focus {
-    outline: none; }
-  .contact:hover .underline {
+  .contact .contact-block form select, .contact .contact-block form input, .contact .contact-block form textarea {
+    resize: none; }
+    .contact .contact-block form select:focus, .contact .contact-block form input:focus, .contact .contact-block form textarea:focus {
+      outline: none; }
+  .contact .contact-block button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent; }
+    .contact .contact-block button:focus {
+      border: 1px solid white; }
+  .contact .contact-block:hover .underline {
     display: inline-block; }
-    .contact:hover .underline:after {
+    .contact .contact-block:hover .underline:after {
       width: 80%;
       transition: 1s;
       background-color: #9e171d; }
+  .contact__your-estimate__head, .contact__your-estimate__sum {
+    color: #9e171d;
+    font-size: 40px;
+    margin-block-end: 0;
+    font-family: 'Gobold';
+    font-variant: all-small-caps; }
+  .contact__your-estimate__discription {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: white; }
+  .contact__your-estimate__another {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    vertical-align: middle; }
+    .contact__your-estimate__another:before {
+      border: solid white;
+      padding: 3px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      content: ""; }
+  .contact__your-estimate:hover .underline:after {
+    width: 80%;
+    transition: 1s;
+    background-color: white; }
 
 @media screen and (max-width: 1200px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {

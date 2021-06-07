@@ -589,7 +589,7 @@
           top: 0;
           background-color: #82878a;
         }
-        select{
+        select, button{
           border: 1px solid #82878a;
           color: #82878a;
           background-color: transparent;
@@ -608,21 +608,70 @@
           }
         }
       }
-      select, input{
+      select, input, textarea{
+        resize: none;
         &:focus{
           outline: none;
         }
       }
     }
-  }
-  &:hover {
-    .underline {
-      display: inline-block;
+    button{
+    border: 1px solid white;
+      color: white;
+      background-color: transparent;
+      &:focus{
+        border: 1px solid white;
+      }
+    }
+    &:hover {
+      .underline {
+        display: inline-block;
 
-      &:after {
-        width: 80%;
-        transition: 1s;
-        background-color: #9e171d;
+        &:after {
+          width: 80%;
+          transition: 1s;
+          background-color: #9e171d;
+        }
+      }
+    }
+  }
+  &__your-estimate{
+    &__head, &__sum {
+      color: #9e171d;
+      font-size: 40px;
+      margin-block-end: 0;
+      @include Gobold();
+      font-variant: all-small-caps;
+    }
+    &__discription{
+      @include opensans;
+      font-size: 13px;
+      color: white;
+    }
+    &__another{
+      @include opensans;
+      text-transform: uppercase;
+      color: white;
+      font-size: 13px;
+      font-weight: bolder;
+      vertical-align: middle;
+      &:before{
+        border: solid white;
+        padding: 3px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        content: "";
+      }
+    }
+    &:hover{
+      .underline{
+        &:after{
+          width: 80%;
+          transition: 1s;
+          background-color: white;
+        }
       }
     }
   }
