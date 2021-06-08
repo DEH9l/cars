@@ -1,5 +1,6 @@
 @import url(bootstrap.css);
 @import url(../fonts/stylesheet.css);
+@import url(//use.fontawesome.com/releases/v5.0.7/css/all.css);
 .black-bg {
   background-color: #0a0a0a; }
 
@@ -216,79 +217,6 @@
   text-transform: uppercase;
   font-weight: bolder;
   position: relative; }
-  .our-fleet__cars-block .prevslide {
-    position: absolute;
-    left: -30px;
-    border: 1px solid grey;
-    bottom: 45%;
-    z-index: 2;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    transform: rotate(180deg); }
-    .our-fleet__cars-block .prevslide span:first-of-type {
-      width: 20px;
-      height: 1px;
-      background: #bcbcbc;
-      display: inline-block;
-      position: absolute;
-      top: 21px;
-      left: 10%; }
-    .our-fleet__cars-block .prevslide span:last-of-type {
-      border-right: 1px solid grey;
-      border-bottom: 1px solid grey;
-      display: inline-block;
-      padding: 5px;
-      width: 10px;
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      position: absolute;
-      top: 16px;
-      right: 25%; }
-    .our-fleet__cars-block .prevslide:hover {
-      border: solid red 1px; }
-      .our-fleet__cars-block .prevslide:hover span:last-of-type {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red; }
-      .our-fleet__cars-block .prevslide:hover span:first-of-type {
-        background: red; }
-  .our-fleet__cars-block .nextslide {
-    position: absolute;
-    right: -30px;
-    border: 1px solid grey;
-    bottom: 45%;
-    z-index: 2;
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
-    height: 50px; }
-    .our-fleet__cars-block .nextslide span:first-of-type {
-      width: 20px;
-      height: 1px;
-      background: #bcbcbc;
-      display: inline-block;
-      position: absolute;
-      top: 21px;
-      left: 10%; }
-    .our-fleet__cars-block .nextslide span:last-of-type {
-      border-right: 1px solid grey;
-      border-bottom: 1px solid grey;
-      display: inline-block;
-      padding: 5px;
-      width: 10px;
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      position: absolute;
-      top: 16px;
-      right: 25%; }
-    .our-fleet__cars-block .nextslide:hover {
-      border: solid red 1px; }
-      .our-fleet__cars-block .nextslide:hover span:last-of-type {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red; }
-      .our-fleet__cars-block .nextslide:hover span:first-of-type {
-        background: red; }
   .our-fleet__cars-block .our-fleet__about-cars__item3, .our-fleet__cars-block .our-fleet__about-cars__item2,
   .our-fleet__cars-block .our-fleet__about-cars__item1 {
     position: relative; }
@@ -326,6 +254,81 @@
   display: inline-block;
   width: 80%;
   bottom: 0; }
+
+.prevslide {
+  position: absolute;
+  left: -30px;
+  border: 1px solid grey;
+  bottom: 45%;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(180deg); }
+  .prevslide span:first-of-type {
+    width: 20px;
+    height: 1px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 10%; }
+  .prevslide span:last-of-type {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 33%;
+    right: 25%; }
+  .prevslide:hover {
+    border: solid red 1px; }
+    .prevslide:hover span:last-of-type {
+      border-right: 1px solid red;
+      border-bottom: 1px solid red; }
+    .prevslide:hover span:first-of-type {
+      background: red; }
+
+.nextslide {
+  position: absolute;
+  right: -30px;
+  border: 1px solid grey;
+  bottom: 45%;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px; }
+  .nextslide span:first-of-type {
+    width: 20px;
+    height: 1px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 10%; }
+  .nextslide span:last-of-type {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 40%;
+    right: 25%; }
+  .nextslide:hover {
+    border: solid red 1px; }
+    .nextslide:hover span:last-of-type {
+      border-right: 1px solid red;
+      border-bottom: 1px solid red; }
+    .nextslide:hover span:first-of-type {
+      background: red; }
 
 .contact {
   background-color: #161616; }
@@ -451,6 +454,87 @@
     transition: 1s;
     background-color: white; }
 
+.testimonials {
+  background-color: #0d0d0d; }
+  .testimonials__head {
+    font-family: 'Gobold';
+    font-size: 40px;
+    color: white;
+    font-variant: all-small-caps; }
+    .testimonials__head .nextslide {
+      top: 0;
+      right: 0;
+      left: 0;
+      position: relative; }
+    .testimonials__head .prevslide {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0; }
+  .testimonials__disc {
+    font-size: 13px;
+    color: #82878a;
+    font-family: 'Open Sans'; }
+  .testimonials:hover .underline:after {
+    width: 80%;
+    transition: 1s;
+    background-color: #9e171d; }
+  .testimonials__reviews__item {
+    font-size: 14px; }
+    .testimonials__reviews__item:nth-of-type(3n+2) {
+      padding: 0 1.5rem; }
+    .testimonials__reviews__item .reviews__text {
+      color: #82878a;
+      font-family: 'Open Sans'; }
+    .testimonials__reviews__item .reviews__name {
+      font-family: 'Gobold';
+      text-transform: uppercase;
+      color: #9e171d; }
+
+.footer .sydney-cbd .footer__nav a, .footer .sydney-cbd .footer__contacts a, .footer .connect-with-us .footer__nav a, .footer .connect-with-us .footer__contacts a {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #82878a;
+  text-decoration: none;
+  padding-right: 1rem; }
+  .footer .sydney-cbd .footer__nav a:last-of-type, .footer .sydney-cbd .footer__contacts a:last-of-type, .footer .connect-with-us .footer__nav a:last-of-type, .footer .connect-with-us .footer__contacts a:last-of-type {
+    padding-right: 0; }
+.footer .sydney-cbd .footer__title, .footer .connect-with-us .footer__title {
+  font-family: 'Gobold';
+  font-size: 40px;
+  color: #9e171d;
+  font-variant: all-small-caps; }
+  .footer .sydney-cbd .footer__title .underline, .footer .connect-with-us .footer__title .underline {
+    color: black; }
+.footer .sydney-cbd:hover .underline:after, .footer .connect-with-us:hover .underline:after {
+  width: 80%;
+  transition: 1s;
+  background-color: #9e171d; }
+.footer__social {
+  background-color: #e6e6e6;
+  font-family: 'Open Sans';
+  color: #82878a;
+  font-size: 14px; }
+.footer a {
+  color: #82878a; }
+.footer a.privacy {
+  color: #9e171d;
+  padding-left: 24px; }
+.footer .social-icons {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #82878a;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: baseline; }
+  .footer .social-icons .fab {
+    display: inline-block;
+    vertical-align: sub;
+    color: white;
+    font-size: 1rem;
+    text-align: center; }
+
 @media screen and (max-width: 1200px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     height: 50%; }
@@ -486,6 +570,9 @@
   .our-fleet__cars-block .prevslide {
     left: 0; } }
 @media screen and (max-width: 768px) {
+  .testimonials__reviews__item:nth-of-type(3n+2) {
+    padding: 0; }
+
   .top-about-company__left {
     position: unset; }
 
