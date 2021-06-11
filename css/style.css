@@ -15,22 +15,18 @@
     content: "";
     width: 0; }
 
-.logo-block .logo-and-menu {
-  height: 100px; }
-  .logo-block .logo-and-menu .logo-and-menu__logo {
-    height: 80%; }
-    .logo-block .logo-and-menu .logo-and-menu__logo img {
-      display: inline-block;
-      vertical-align: middle; }
-
 .logo-and-menu__menu {
-  height: 80%; }
+  height: 45px; }
   .logo-and-menu__menu span {
-    vertical-align: middle;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 45px;
     height: 2px;
     background-color: white; }
+.logo-and-menu .logo-and-menu__logo {
+  height: 80%; }
+  .logo-and-menu .logo-and-menu__logo img {
+    display: inline-block;
+    vertical-align: middle; }
 
 .top-about-company {
   position: relative;
@@ -535,6 +531,37 @@
     font-size: 1rem;
     text-align: center; }
 
+.top-menu {
+  background-color: #B91017;
+  color: white;
+  z-index: 1;
+  top: 0; }
+  .top-menu .menu-item a {
+    color: white;
+    font-variant: all-small-caps;
+    font-size: 13px;
+    font-weight: lighter; }
+  .top-menu .menu-item .underline:hover:after {
+    width: 100%;
+    transition: 1s;
+    background-color: white; }
+  .top-menu #mdiv {
+    width: 25px;
+    height: 25px; }
+  .top-menu .mdiv {
+    height: 25px;
+    width: 2px;
+    margin-left: 12px;
+    background-color: white;
+    transform: rotate(45deg);
+    Z-index: 1; }
+  .top-menu .md {
+    height: 25px;
+    width: 2px;
+    background-color: white;
+    transform: rotate(90deg);
+    Z-index: 2; }
+
 @media screen and (max-width: 1200px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     height: 50%; }
@@ -582,6 +609,26 @@
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p {
     margin-block-end: 0; }
     .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type {
-      margin-top: 0; } }
+      margin-top: 0; }
+
+  .top-menu .menu-item {
+    padding: 0 30px; } }
+@media screen and (max-width: 576px) {
+  .top-menu ul {
+    margin: 0 -12px; }
+    .top-menu ul .menu-item {
+      padding: 0;
+      flex: 33%;
+      border-top: 1px solid white;
+      border-right: 1px solid white; }
+      .top-menu ul .menu-item:nth-of-type(3n) {
+        border-right: 0; }
+      .top-menu ul .menu-item:last-of-type {
+        border-right: 0; }
+
+  .logo-and-menu__menu {
+    height: 20px; }
+    .logo-and-menu__menu span {
+      width: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

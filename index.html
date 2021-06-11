@@ -10,46 +10,73 @@
 </head>
 <body>
 <section>
-    <article class="black-bg">
-        <div class="container">
-            <div class="logo-and-menu clearfix py-5">
-                <a class="logo-and-menu__logo float-start col-lg-3 col-7"><img class="d-inline-block mw-100" alt="logo"
-                                                                               src="images/logo.jpg"></a>
-                <div class="logo-and-menu__menu col-1 float-end">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <article class="black-bg position-relative">
+        <div class="logo-and-menu container d-flex justify-content-between py-5 align-items-center">
+            <a class="logo-and-menu__logo  col-lg-3 col-md-4 col-sm-5 col-7"><img class="w-100 d-inline-block"
+                                                                                  alt="logo"
+                                                                                  src="images/logo.jpg"></a>
+            <div class="open-menu logo-and-menu__menu d-flex flex-column justify-content-around">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="top-about-company clearfix black-bg">
-                <div class="black-bg">
-                    <div class="top-about-company__left d-inline-block float-start coll-xl-6 col-lg-6 col-md-5 col-6 pr-1">
-                        <img alt="logo" src="images/now-smart_03.png" class="w-100 d-inline-block ">
+        </div>
+        <div class="top-menu m-auto d-none position-absolute w-100">
+            <div class="top-menu__inner container-lg py-5 ps-md-5 ps-lg-4">
+                <div class="logo-close d-flex justify-content-between align-items-center pb-3">
+                    <img class="d-inline-block col-lg-3 col-md-4 col-sm-5 col-7" src="images/menu-logo.png">
+                    <div class="open-menu" id="mdiv">
+                        <div class="mdiv">
+                            <div class="md"></div>
+                        </div>
                     </div>
-                    <div class="top-about-company__right d-inline-block col-xl-7 col-lg-8 col-md-8 col-12 float-end">
-                        <div class="top-about-company__right__inner"><h1 class="pb-lg-1 pt-lg-4"><span
-                                class="underline">Lorem</span>
-                            <span>Ipsum</span></h1>
-                            <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
-                                consequat auctor eu in elit.
+                </div>
+                <ul class="list-unstyled flex-row d-flex text-center justify-content-evenly flex-wrap pt-md-5 justify-content-xl-end justify-content-md-around justify-content-sm-evenly">
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">HOME</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">About us</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Services</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Fleet</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Vip guests</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">TESTIMONIALS</a>
+                    </li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Booking</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Wedding</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Tours</a></li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Pricing guide</a>
+                    </li>
+                    <li class="menu-item pe-lg-3"><a class="text-decoration-none underline" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-about-company container clearfix black-bg">
+            <div class="black-bg">
+                <div class="top-about-company__left d-inline-block float-start coll-xl-6 col-lg-6 col-md-5 col-6 pr-1">
+                    <img alt="logo" src="images/now-smart_03.png" class="w-100 d-inline-block">
+                </div>
+                <div class="top-about-company__right d-inline-block col-xl-7 col-lg-8 col-md-8 col-12 float-end">
+                    <div class="top-about-company__right__inner"><h1 class="pb-lg-1 pt-lg-4"><span
+                            class="underline">Lorem</span>
+                        <span>Ipsum</span></h1>
+                        <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                            velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                            consequat auctor eu in elit.
 
-                                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed
-                                non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra,
-                                erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
-                                Suspendisse in orci enim.</p>
-                            <div class="top-about-company__pagination">
-                                <span>02</span>
-                                <span>|03</span>
-                                <div class="pagination__next">
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                            Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed
+                            non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra,
+                            erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
+                            Suspendisse in orci enim.</p>
+                        <div class="top-about-company__pagination">
+                            <span>02</span>
+                            <span>|03</span>
+                            <div class="pagination__next">
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </article>
     <article class="service d-flex justify-content-center flex-row flex-wrap">
@@ -251,7 +278,7 @@
         </div>
         <div class="connect-with-us col-md-5 col-12">
             <p class="footer__title pb-md-5"><span class="underline">connect</span> with us</p>
-            <div class="footer__contacts ">
+            <div class="footer__contacts">
                 <a href="#">+61 - 0400 755 765</a>
                 <a href="#" class="text-decoration-underline ps-xl-5">bookings@sydneycbdlimos.com.au</a>
             </div>
@@ -272,6 +299,14 @@
         </div>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="javascript/bootstrap.js"></script>
+<script rel="script">
+    $(document).ready(function () {
+        $(".open-menu").click(function () {
+            $(".top-menu").toggleClass('d-none');
+        });
+    });
+</script>
 </body>
 </html>
