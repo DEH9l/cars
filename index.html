@@ -91,8 +91,11 @@
         </div>
         </div>
     </article>
+
+
+
     <article class="service d-flex justify-content-center flex-row flex-wrap">
-        <div class="our-service col-lg-4 col-md-6 col-12">
+        <div class="our-service col-lg-4 col-md-4 col-sm-6 col-12">
             <div class="service__inner col-lg-8 col-10 offset-2 pt-3">
                 <p class="header-text pb-lg-3">
                     <span class="underline">Our</span> <span>Service</span></p>
@@ -109,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="weddings col-lg-4 col-md-6 col-12">
+        <div class="weddings col-lg-4 col-md-4 col-sm-6 col-12">
             <div class="service__inner col-lg-8 col-10 offset-2 pt-3">
                 <p class="header-text pb-lg-3">
                     <span class="underline">Weddings</span></p>
@@ -126,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <div class="tours col-lg-4 col-12">
+        <div class="tours col-lg-4 col-md-4 col-12">
             <div class="service__inner col-lg-8 col-10 offset-2 pt-3">
                 <p class="header-text pb-lg-3">
                     <span class="underline">Tours</span></p>
@@ -142,64 +145,20 @@
             </div>
         </div>
     </article>
-    <!--<article class="our-fleet container pb-5">
-        <p class="our-fleet__head"><span class="underline">Our</span> <span>Fleet</span></p>
-        <p class="our-fleet__about-cars">Few words about cars. How great they are</p>
-        <div class="our-fleet__cars-block d-flex row align-items-baseline justify-content-center">
-            <div class="prevslide">
-                <span></span>
-                <span></span>
-            </div>
-            <div class="our-fleet__about-cars__item1 col-10 col-xl-4 col-lg-3">
-                <img class="d-inline-block w-100" src="images/our-fleet-bmw.jpg">
-                <div class="car-params w-100"></div>
-                <div class="car-params-text w-100 text-center flex-column align-items-center">
-                    <p>Passengers: 1</p>
-                    <p>Suitcases: 2</p>
-                    <p>Hand Luggage: 3</p>
-                </div>
-                <p class="text-center">BMW 7 series</p>
-            </div>
-            <div class="our-fleet__about-cars__item2 d-none d-lg-inline-block col-xl-4 col-lg-3">
-                <img class="d-inline-block w-100" src="images/our-fleet-audia8.jpg">
-                <div class="car-params w-100"></div>
-                <div class="car-params-text w-100 text-center flex-column align-items-center">
-                    <p>Passengers: 1</p>
-                    <p>Suitcases: 2</p>
-                    <p>Hand Luggage: 3</p>
-                </div>
-                <p class="text-center">Audi a8</p>
-            </div>
-            <div class="our-fleet__about-cars__item3 d-lg-inline-block d-none col-xl-4 col-lg-3">
-                <img class="d-inline-block w-100" src="images/our-fleet-audq7.jpg">
-                <div class="car-params w-100"></div>
-                <div class="car-params-text w-100 text-center flex-column align-items-center">
-                    <p>Passengers: 1</p>
-                    <p>Suitcases: 2</p>
-                    <p>Hand Luggage: 3</p>
-                </div>
-                <p class="text-center">Audi q7</p>
-            </div>
-            <div class="nextslide">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </article>-->
     <article class="our-fleet container pb-5 position-relative">
         <p class="our-fleet__head"><span class="underline">Our</span> <span>Fleet</span></p>
         <p class="our-fleet__about-cars">Few words about cars. How great they are</p>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <button class="carousel-control-prev <!--prevslide-->" type="button" data-bs-target="#carouselExampleControls"
+            <button class="prevslide" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span></span>
+                <span></span>
             </button>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-block">
-                        <div class="our-fleet__cars-block d-flex row align-items-baseline justify-content-center">
-                            <div class="our-fleet__about-cars__item1 col-10 col-xl-4 col-lg-3">
+                        <div class="our-fleet__cars-block d-flex flex-column align-items-baseline justify-content-center flex-md-row">
+                            <div class="our-fleet__about-cars__item1 col-10 col-xl-4 col-md-4 col-3  m-auto">
                                 <img class="d-inline-block w-100" src="images/our-fleet-bmw.jpg">
                                 <div class="car-params w-100"></div>
                                 <div class="car-params-text w-100 text-center flex-column align-items-center">
@@ -209,7 +168,7 @@
                                 </div>
                                 <p class="text-center">BMW 7 series</p>
                             </div>
-                            <div class="our-fleet__about-cars__item2 d-none d-lg-inline-block col-xl-4 col-lg-3">
+                            <div class="our-fleet__about-cars__item2 d-lg-inline-block col-10 col-xl-4 col-md-4 col-3  m-auto">
                                 <img class="d-inline-block w-100" src="images/our-fleet-audia8.jpg">
                                 <div class="car-params w-100"></div>
                                 <div class="car-params-text w-100 text-center flex-column align-items-center">
@@ -219,7 +178,7 @@
                                 </div>
                                 <p class="text-center">Audi a8</p>
                             </div>
-                            <div class="our-fleet__about-cars__item3 d-lg-inline-block d-none col-xl-4 col-lg-3">
+                            <div class="our-fleet__about-cars__item3 d-lg-inline-block col-10 col-xl-4 col-md-4 col-3  m-auto">
                                 <img class="d-inline-block w-100" src="images/our-fleet-audq7.jpg">
                                 <div class="car-params w-100"></div>
                                 <div class="car-params-text w-100 text-center flex-column align-items-center">
@@ -234,8 +193,8 @@
                 </div>
                 <div class="carousel-item">
                     <div class="d-block">
-                        <div class="our-fleet__cars-block d-flex row align-items-baseline justify-content-center">
-                            <div class="our-fleet__about-cars__item1 col-10 col-xl-4 col-lg-3">
+                        <div class="our-fleet__cars-block d-flex flex-column align-items-baseline justify-content-center flex-md-row">
+                            <div class="our-fleet__about-cars__item1 col-10 col-xl-4 col-md-4 col-3 m-auto">
                                 <img class="d-inline-block w-100" src="images/our-fleet-bmw.jpg">
                                 <div class="car-params w-100"></div>
                                 <div class="car-params-text w-100 text-center flex-column align-items-center">
@@ -245,7 +204,7 @@
                                 </div>
                                 <p class="text-center">BMW 7 series</p>
                             </div>
-                            <div class="our-fleet__about-cars__item2 d-none d-lg-inline-block col-xl-4 col-lg-3">
+                            <div class="our-fleet__about-cars__item2 d-lg-inline-block col-10 col-xl-4 col-md-4 col-3  m-auto">
                                 <img class="d-inline-block w-100" src="images/our-fleet-audia8.jpg">
                                 <div class="car-params w-100"></div>
                                 <div class="car-params-text w-100 text-center flex-column align-items-center">
@@ -255,7 +214,7 @@
                                 </div>
                                 <p class="text-center">Audi a8</p>
                             </div>
-                            <div class="our-fleet__about-cars__item3 d-lg-inline-block d-none col-xl-4 col-lg-3">
+                            <div class="our-fleet__about-cars__item3 d-lg-inline-block  col-10 col-xl-4 col-md-4 col-3  m-auto">
                                 <img class="d-inline-block w-100" src="images/our-fleet-audq7.jpg">
                                 <div class="car-params w-100"></div>
                                 <div class="car-params-text w-100 text-center flex-column align-items-center">
@@ -269,10 +228,10 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-next <!--nextslide-->" type="button" data-bs-target="#carouselExampleControls"
+            <button class="nextslide" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </article>
