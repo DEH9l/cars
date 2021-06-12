@@ -398,115 +398,120 @@
       }
     }
   }
-  .carousel-control-prev, .carousel-control-next{
-    width:50px;
+
+  .carousel-control-prev {
+    width: 50px;
     left: -50px;
-    .carousel-control-prev-icon,
   }
-/*  .prevslide {
-    position: absolute;
-    left: -30px;
-    border: 1px solid grey;
-    bottom: 45%;
-    z-index: 2;
-    height: 50px;
+  .carousel-control-next {
+    right: -50px;
     width: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    transform: rotate(180deg);
-
-    span {
-      &:first-of-type {
-        width: 20px;
-        height: 1px;
-        background: #bcbcbc;
-        display: inline-block;
-        position: absolute;
-        top: 45%;
-        left: 10%;
-      }
-
-      &:last-of-type {
-        border-right: 1px solid grey;
-        border-bottom: 1px solid grey;
-        display: inline-block;
-        padding: 5px;
-        width: 10px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        position: absolute;
-        top: 33%;
-        right: 25%;
-      }
-    }
-
-    &:hover {
-      border: solid red 1px;
-
-      span {
-        &:last-of-type {
-          border-right: 1px solid red;
-          border-bottom: 1px solid red;
-        }
-
-        &:first-of-type {
-          background: red;
-        }
-      }
-    }
   }
 
-  .nextslide {
-    position: absolute;
-    right: -30px;
-    border: 1px solid grey;
-    bottom: 45%;
-    z-index: 2;
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-
-    span {
-      &:first-of-type {
-        width: 20px;
-        height: 1px;
-        background: #bcbcbc;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-      }
-
-      &:last-of-type {
-        border-right: 1px solid grey;
-        border-bottom: 1px solid grey;
-        display: inline-block;
-        padding: 5px;
-        width: 10px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        position: absolute;
-        top: 40%;
-        right: 25%;
-      }
-    }
-
-    &:hover {
-      border: solid red 1px;
+  /*  .prevslide {
+      position: absolute;
+      left: -30px;
+      border: 1px solid grey;
+      bottom: 45%;
+      z-index: 2;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(180deg);
 
       span {
-        &:last-of-type {
-          border-right: 1px solid red;
-          border-bottom: 1px solid red;
+        &:first-of-type {
+          width: 20px;
+          height: 1px;
+          background: #bcbcbc;
+          display: inline-block;
+          position: absolute;
+          top: 45%;
+          left: 10%;
         }
 
-        &:first-of-type {
-          background: red;
+        &:last-of-type {
+          border-right: 1px solid grey;
+          border-bottom: 1px solid grey;
+          display: inline-block;
+          padding: 5px;
+          width: 10px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          position: absolute;
+          top: 33%;
+          right: 25%;
+        }
+      }
+
+      &:hover {
+        border: solid red 1px;
+
+        span {
+          &:last-of-type {
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+          }
+
+          &:first-of-type {
+            background: red;
+          }
         }
       }
     }
-  }*/
+
+    .nextslide {
+      position: absolute;
+      right: -30px;
+      border: 1px solid grey;
+      bottom: 45%;
+      z-index: 2;
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+
+      span {
+        &:first-of-type {
+          width: 20px;
+          height: 1px;
+          background: #bcbcbc;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 10%;
+        }
+
+        &:last-of-type {
+          border-right: 1px solid grey;
+          border-bottom: 1px solid grey;
+          display: inline-block;
+          padding: 5px;
+          width: 10px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          position: absolute;
+          top: 40%;
+          right: 25%;
+        }
+      }
+
+      &:hover {
+        border: solid red 1px;
+
+        span {
+          &:last-of-type {
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+          }
+
+          &:first-of-type {
+            background: red;
+          }
+        }
+      }
+    }*/
 }
 
 .contact {

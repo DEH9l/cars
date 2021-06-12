@@ -1,50 +1,670 @@
-/*
-Error: Invalid CSS after "...trol-prev-icon,": expected "{", was "}"
-        on line 405 of style.scss
+@import url(bootstrap.css);
+@import url(../fonts/stylesheet.css);
+@import url(//use.fontawesome.com/releases/v5.0.7/css/all.css);
+.black-bg {
+  background-color: #0a0a0a; }
 
-400:   }
-401:   .carousel-control-prev, .carousel-control-next{
-402:     width:50px;
-403:     left: -50px;
-404:     .carousel-control-prev-icon,
-405:   }
-406: /*  .prevslide {
-407:     position: absolute;
-408:     left: -30px;
-409:     border: 1px solid grey;
-410:     bottom: 45%;
+.underline {
+  display: inline-block;
+  position: relative; }
+  .underline:after {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    bottom: -10%;
+    content: "";
+    width: 0; }
 
-Backtrace:
-style.scss:405
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
-C:/Ruby26-x64/bin/scss:23:in `load'
-C:/Ruby26-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...trol-prev-icon,\": expected \"{\", was \"}\"\A         on line 405 of style.scss\A \A 400:   }\A 401:   .carousel-control-prev, .carousel-control-next{\A 402:     width:50px;\A 403:     left: -50px;\A 404:     .carousel-control-prev-icon,\A 405:   }\A 406: /*  .prevslide {\A 407:     position: absolute;\A 408:     left: -30px;\A 409:     border: 1px solid grey;\A 410:     bottom: 45%;"; }
+.logo-and-menu__menu {
+  height: 45px; }
+  .logo-and-menu__menu span {
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: white; }
+.logo-and-menu .logo-and-menu__logo {
+  height: 80%; }
+  .logo-and-menu .logo-and-menu__logo img {
+    display: inline-block;
+    vertical-align: middle; }
+
+.top-about-company {
+  position: relative;
+  padding-bottom: 100px; }
+  .top-about-company__left {
+    top: 0;
+    left: 0;
+    position: absolute; }
+  .top-about-company__right {
+    background-color: #171717; }
+    .top-about-company__right__inner {
+      padding: 0 100px 0 200px;
+      position: relative; }
+      .top-about-company__right__inner:after {
+        -webkit-transition: 1s;
+        transition: 1s;
+        opacity: 0;
+        height: 2px;
+        top: 32px;
+        content: "";
+        display: block;
+        width: 0; }
+      .top-about-company__right__inner:hover h1 .underline {
+        display: inline-block; }
+        .top-about-company__right__inner:hover h1 .underline:after {
+          background-color: #4a4c4c;
+          width: 80%;
+          transition: 1s; }
+      .top-about-company__right__inner h1 {
+        font-family: 'Gobold';
+        font-size: 25px;
+        font-variant: all-small-caps; }
+        .top-about-company__right__inner h1 span {
+          color: #82878a; }
+      .top-about-company__right__inner p {
+        color: #82878a;
+        font-family: 'Open Sans'; }
+  .top-about-company__pagination {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: 'Open Sans'; }
+    .top-about-company__pagination span:first-of-type {
+      display: inline-block;
+      color: #4a4c4c; }
+    .top-about-company__pagination span:last-of-type {
+      color: #82878a; }
+
+.pagination__next {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  .pagination__next span:first-of-type {
+    width: 20px;
+    height: 1px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    left: 10%; }
+  .pagination__next span:last-of-type {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 16px;
+    right: 25%; }
+
+.service {
+  padding-bottom: 100px; }
+  .service .weddings {
+    background-image: url("../images/audi-bg.png");
+    background-position: center;
+    height: 606px;
+    position: relative;
+    z-index: 0; }
+    .service .weddings:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%; }
+    .service .weddings .underline:after {
+      display: inline-block;
+      background-color: white;
+      width: 80%; }
+    .service .weddings:hover:before {
+      background-color: red; }
+    .service .weddings:hover .underline {
+      color: #171717; }
+  .service .our-service {
+    background-image: url("../images/mers-bg.png");
+    background-position: center;
+    height: 606px;
+    position: relative;
+    z-index: 0; }
+    .service .our-service:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%; }
+    .service .our-service .underline:after {
+      display: inline-block;
+      background-color: white;
+      width: 80%; }
+    .service .our-service:hover:before {
+      background-color: red; }
+    .service .our-service:hover .underline {
+      color: #171717; }
+  .service .tours {
+    background-image: url("../images/mers-bg2.png");
+    background-position: center;
+    height: 606px;
+    position: relative;
+    z-index: 0; }
+    .service .tours:before {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: inline-block;
+      opacity: 50%; }
+    .service .tours .underline:after {
+      display: inline-block;
+      background-color: white;
+      width: 80%; }
+    .service .tours:hover:before {
+      background-color: red; }
+    .service .tours:hover .underline {
+      color: #171717; }
+  .service .underline {
+    color: white; }
+  .service .pagination__next {
+    border: 1px solid #bcbcbc;
+    position: absolute;
+    bottom: 50px; }
+  .service .service__inner {
+    position: relative;
+    z-index: 2;
+    padding-right: 1rem;
+    color: white;
+    height: 606px; }
+    .service .service__inner > div {
+      padding-top: 185px; }
+    .service .service__inner .header-text {
+      font-family: 'Gobold';
+      font-size: 25px; }
+    .service .service__inner p {
+      font-family: 'Open Sans';
+      font-size: 14px; }
+
+.our-fleet {
+  /*  .prevslide {
+      position: absolute;
+      left: -30px;
+      border: 1px solid grey;
+      bottom: 45%;
+      z-index: 2;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(180deg);
+
+      span {
+        &:first-of-type {
+          width: 20px;
+          height: 1px;
+          background: #bcbcbc;
+          display: inline-block;
+          position: absolute;
+          top: 45%;
+          left: 10%;
+        }
+
+        &:last-of-type {
+          border-right: 1px solid grey;
+          border-bottom: 1px solid grey;
+          display: inline-block;
+          padding: 5px;
+          width: 10px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          position: absolute;
+          top: 33%;
+          right: 25%;
+        }
+      }
+
+      &:hover {
+        border: solid red 1px;
+
+        span {
+          &:last-of-type {
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+          }
+
+          &:first-of-type {
+            background: red;
+          }
+        }
+      }
+    }
+
+    .nextslide {
+      position: absolute;
+      right: -30px;
+      border: 1px solid grey;
+      bottom: 45%;
+      z-index: 2;
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+
+      span {
+        &:first-of-type {
+          width: 20px;
+          height: 1px;
+          background: #bcbcbc;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 10%;
+        }
+
+        &:last-of-type {
+          border-right: 1px solid grey;
+          border-bottom: 1px solid grey;
+          display: inline-block;
+          padding: 5px;
+          width: 10px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          position: absolute;
+          top: 40%;
+          right: 25%;
+        }
+      }
+
+      &:hover {
+        border: solid red 1px;
+
+        span {
+          &:last-of-type {
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+          }
+
+          &:first-of-type {
+            background: red;
+          }
+        }
+      }
+    }*/ }
+  .our-fleet__head {
+    color: #9e171d;
+    font-size: 40px;
+    margin-block-end: 0;
+    font-family: 'Gobold';
+    font-variant: all-small-caps; }
+    .our-fleet__head .underline {
+      color: #0e0e0e; }
+  .our-fleet__about-cars {
+    font-family: 'Open Sans';
+    color: #969a9c;
+    font-size: 13px; }
+  .our-fleet__cars-block {
+    font-family: 'Gobold';
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative; }
+    .our-fleet__cars-block .our-fleet__about-cars__item3, .our-fleet__cars-block .our-fleet__about-cars__item2,
+    .our-fleet__cars-block .our-fleet__about-cars__item1 {
+      position: relative; }
+      .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params,
+      .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params {
+        display: none;
+        position: absolute;
+        bottom: 60px;
+        height: 40%;
+        left: 0;
+        background-color: red;
+        opacity: 80%; }
+      .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text,
+      .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        height: 40%;
+        color: white;
+        font-size: 13px;
+        font-family: 'Open Sans';
+        display: none; }
+        .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p,
+        .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p {
+          margin-block-end: 0; }
+          .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type,
+          .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type {
+            margin-top: 20px; }
+      .our-fleet__cars-block .our-fleet__about-cars__item3:hover .car-params, .our-fleet__cars-block .our-fleet__about-cars__item3:hover .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2:hover .car-params, .our-fleet__cars-block .our-fleet__about-cars__item2:hover .car-params-text,
+      .our-fleet__cars-block .our-fleet__about-cars__item1:hover .car-params,
+      .our-fleet__cars-block .our-fleet__about-cars__item1:hover .car-params-text {
+        display: inline-block; }
+  .our-fleet:hover .underline:after {
+    background-color: #9e171d;
+    display: inline-block;
+    width: 80%;
+    bottom: 0; }
+  .our-fleet .carousel-control-prev {
+    width: 50px;
+    left: -50px; }
+  .our-fleet .carousel-control-next {
+    right: -50px;
+    width: 50px; }
+
+.contact {
+  background-color: #161616; }
+  .contact .contact-block__title {
+    font-family: 'Gobold';
+    font-size: 40px; }
+    .contact .contact-block__title .underline {
+      display: none; }
+  .contact .contact-block__disc {
+    font-size: 13px;
+    color: #82878a;
+    font-family: 'Open Sans'; }
+  .contact .contact-block form p {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #82878a; }
+  .contact .contact-block form input[type="checkbox" i] {
+    background-color: #161616;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9e171d; }
+  .contact .contact-block form input[type="checkbox" i]:checked:after {
+    display: inline-block;
+    position: absolute;
+    bottom: 9px;
+    right: -5px;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(310deg); }
+  .contact .contact-block form input[type="checkbox" i]:checked:before {
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: -3px;
+    content: "";
+    width: 13px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(50deg); }
+  .contact .contact-block form .vehicle-type {
+    position: relative; }
+    .contact .contact-block form .vehicle-type:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      right: 10px;
+      top: 10px;
+      border-left: 1px solid #9e171d;
+      border-bottom: 1px solid #9e171d;
+      transform: rotate(320deg); }
+    .contact .contact-block form .vehicle-type:after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+      right: 30px;
+      top: 0;
+      background-color: #82878a; }
+    .contact .contact-block form .vehicle-type select, .contact .contact-block form .vehicle-type button {
+      border: 1px solid #82878a;
+      color: #82878a;
+      background-color: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+  .contact .contact-block form .email-and-name p:after {
+    padding-left: 5px;
+    content: "*";
+    display: inline-block;
+    color: red; }
+  .contact .contact-block form select, .contact .contact-block form input, .contact .contact-block form textarea {
+    resize: none; }
+    .contact .contact-block form select:focus, .contact .contact-block form input:focus, .contact .contact-block form textarea:focus {
+      outline: none; }
+  .contact .contact-block button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent; }
+    .contact .contact-block button:focus {
+      border: 1px solid white; }
+  .contact .contact-block:hover .underline {
+    display: inline-block; }
+    .contact .contact-block:hover .underline:after {
+      width: 80%;
+      transition: 1s;
+      background-color: #9e171d; }
+  .contact__your-estimate__head, .contact__your-estimate__sum {
+    color: #9e171d;
+    font-size: 40px;
+    margin-block-end: 0;
+    font-family: 'Gobold';
+    font-variant: all-small-caps; }
+  .contact__your-estimate__discription {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: white; }
+  .contact__your-estimate__another {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    vertical-align: middle; }
+    .contact__your-estimate__another:before {
+      border: solid white;
+      padding: 3px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      content: ""; }
+  .contact__your-estimate:hover .underline:after {
+    width: 80%;
+    transition: 1s;
+    background-color: white; }
+
+.testimonials {
+  background-color: #0d0d0d; }
+  .testimonials__head {
+    font-family: 'Gobold';
+    font-size: 40px;
+    color: white;
+    font-variant: all-small-caps; }
+    .testimonials__head .nextslide {
+      top: 0;
+      right: 0;
+      left: 0;
+      position: relative; }
+    .testimonials__head .prevslide {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0; }
+  .testimonials__disc {
+    font-size: 13px;
+    color: #82878a;
+    font-family: 'Open Sans'; }
+  .testimonials:hover .underline:after {
+    width: 80%;
+    transition: 1s;
+    background-color: #9e171d; }
+  .testimonials__reviews__item {
+    font-size: 14px; }
+    .testimonials__reviews__item:nth-of-type(3n+2) {
+      padding: 0 1.5rem; }
+    .testimonials__reviews__item .reviews__text {
+      color: #82878a;
+      font-family: 'Open Sans'; }
+    .testimonials__reviews__item .reviews__name {
+      font-family: 'Gobold';
+      text-transform: uppercase;
+      color: #9e171d; }
+
+.footer .sydney-cbd .footer__nav a, .footer .sydney-cbd .footer__contacts a, .footer .connect-with-us .footer__nav a, .footer .connect-with-us .footer__contacts a {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #82878a;
+  text-decoration: none;
+  padding-right: 1rem; }
+  .footer .sydney-cbd .footer__nav a:last-of-type, .footer .sydney-cbd .footer__contacts a:last-of-type, .footer .connect-with-us .footer__nav a:last-of-type, .footer .connect-with-us .footer__contacts a:last-of-type {
+    padding-right: 0; }
+.footer .sydney-cbd .footer__title, .footer .connect-with-us .footer__title {
+  font-family: 'Gobold';
+  font-size: 40px;
+  color: #9e171d;
+  font-variant: all-small-caps; }
+  .footer .sydney-cbd .footer__title .underline, .footer .connect-with-us .footer__title .underline {
+    color: black; }
+.footer .sydney-cbd:hover .underline:after, .footer .connect-with-us:hover .underline:after {
+  width: 80%;
+  transition: 1s;
+  background-color: #9e171d; }
+.footer__social {
+  background-color: #e6e6e6;
+  font-family: 'Open Sans';
+  color: #82878a;
+  font-size: 14px; }
+.footer a {
+  color: #82878a; }
+.footer a.privacy {
+  color: #9e171d;
+  padding-left: 24px; }
+.footer .social-icons {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #82878a;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: baseline; }
+  .footer .social-icons .fab {
+    display: inline-block;
+    vertical-align: sub;
+    color: white;
+    font-size: 1rem;
+    text-align: center; }
+
+.top-menu {
+  background-color: #B91017;
+  color: white;
+  z-index: 1;
+  top: 0; }
+  .top-menu .menu-item a {
+    color: white;
+    font-variant: all-small-caps;
+    font-size: 13px;
+    font-weight: lighter; }
+  .top-menu .menu-item .underline:hover:after {
+    width: 100%;
+    transition: 1s;
+    background-color: white; }
+  .top-menu #mdiv {
+    width: 25px;
+    height: 25px; }
+  .top-menu .mdiv {
+    height: 25px;
+    width: 2px;
+    margin-left: 12px;
+    background-color: white;
+    transform: rotate(45deg);
+    Z-index: 1; }
+  .top-menu .md {
+    height: 25px;
+    width: 2px;
+    background-color: white;
+    transform: rotate(90deg);
+    Z-index: 2; }
+
+@media screen and (max-width: 1200px) {
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    height: 50%; }
+
+  .our-fleet__cars-block .nextslide {
+    right: 50px; }
+
+  .our-fleet__cars-block .prevslide {
+    left: 50px; } }
+@media screen and (max-width: 1140px) {
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    left: 0;
+    height: 45%; }
+    .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type {
+      margin-top: 10px; } }
+@media screen and (max-width: 992px) {
+  .top-about-company__right__inner {
+    padding: 0 50px 0 100px; }
+
+  .top-about-company__pagination {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
+    left: 0;
+    font-size: 1rem; }
+    .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p {
+      margin-block-end: 1em; }
+
+  .our-fleet__cars-block .nextslide {
+    right: 0; }
+
+  .our-fleet__cars-block .prevslide {
+    left: 0; } }
+@media screen and (max-width: 768px) {
+  .testimonials__reviews__item:nth-of-type(3n+2) {
+    padding: 0; }
+
+  .top-about-company__left {
+    position: unset; }
+
+  .top-about-company__right__inner {
+    padding: 15px; }
+
+  .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p {
+    margin-block-end: 0; }
+    .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type {
+      margin-top: 0; }
+
+  .top-menu .menu-item {
+    padding: 0 30px; } }
+@media screen and (max-width: 576px) {
+  .top-menu ul {
+    margin: 0 -12px; }
+    .top-menu ul .menu-item {
+      padding: 0;
+      flex: 33%;
+      border-top: 1px solid white;
+      border-right: 1px solid white; }
+      .top-menu ul .menu-item:nth-of-type(3n) {
+        border-right: 0; }
+      .top-menu ul .menu-item:last-of-type {
+        border-right: 0; }
+
+  .logo-and-menu__menu {
+    height: 20px; }
+    .logo-and-menu__menu span {
+      width: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
