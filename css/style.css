@@ -335,6 +335,81 @@
     .our-fleet .nextslide:hover span:first-of-type {
       background: red; }
 
+.prevslide {
+  background-color: transparent;
+  position: relative;
+  /*    left: -60px;*/
+  border: 1px solid grey;
+  /*    bottom: 45%;*/
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  /*      vertical-align: middle;*/
+  transform: rotate(180deg); }
+  .prevslide span:first-of-type {
+    width: 20px;
+    height: 1px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 10%; }
+  .prevslide span:last-of-type {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 33%;
+    right: 25%; }
+  .prevslide:hover {
+    border: solid red 1px; }
+    .prevslide:hover span:last-of-type {
+      border-right: 1px solid red;
+      border-bottom: 1px solid red; }
+    .prevslide:hover span:first-of-type {
+      background: red; }
+
+.nextslide {
+  background-color: transparent;
+  position: relative;
+  /*    right: -60px;*/
+  border: 1px solid grey;
+  /*  bottom: 45%;*/
+  display: inline-block;
+  /*      vertical-align: middle;*/
+  width: 50px;
+  height: 50px; }
+  .nextslide span:first-of-type {
+    width: 20px;
+    height: 1px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 10%; }
+  .nextslide span:last-of-type {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 40%;
+    right: 25%; }
+  .nextslide:hover {
+    border: solid red 1px; }
+    .nextslide:hover span:last-of-type {
+      border-right: 1px solid red;
+      border-bottom: 1px solid red; }
+    .nextslide:hover span:first-of-type {
+      background: red; }
+
 .contact {
   background-color: #161616; }
   .contact .contact-block__title {
@@ -466,16 +541,6 @@
     font-size: 40px;
     color: white;
     font-variant: all-small-caps; }
-    .testimonials__head .nextslide {
-      top: 0;
-      right: 0;
-      left: 0;
-      position: relative; }
-    .testimonials__head .prevslide {
-      position: relative;
-      top: 0;
-      right: 0;
-      left: 0; }
   .testimonials__disc {
     font-size: 13px;
     color: #82878a;
@@ -582,12 +647,7 @@
     width: 100%; } }
 @media screen and (max-width: 1140px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
-    left: 0;
-    /*    p {
-          &:first-of-type {
-            margin-top: 10px;
-          }
-        }*/ } }
+    left: 0; } }
 @media screen and (max-width: 992px) {
   .top-about-company__right__inner {
     padding: 0 50px 0 100px; }
