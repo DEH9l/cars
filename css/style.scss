@@ -398,7 +398,9 @@
       }
     }
   }
-
+  .carousel-inner{
+    width: 90%;
+  }
   .carousel-control-prev {
     width: 50px;
     left: -50px;
@@ -416,11 +418,10 @@
 
   .prevslide {
     background-color: transparent;
-    position: absolute;
-    left: -60px;
+    position: relative;
+/*    left: -60px;*/
     border: 1px solid grey;
-    bottom: 45%;
-    z-index: 2;
+/*    bottom: 45%;*/
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -470,11 +471,10 @@
 
   .nextslide {
     background-color: transparent;
-    position: absolute;
-    right: -60px;
+    position: relative;
+/*    right: -60px;*/
     border: 1px solid grey;
-    bottom: 45%;
-    z-index: 2;
+  /*  bottom: 45%;*/
     display: inline-block;
     /*      vertical-align: middle;*/
     width: 50px;
@@ -897,17 +897,22 @@
     Z-index: 2;
   }
 }
-
-@media screen and(max-width: 1200px) {
+@media screen and(min-width: 1400px){
+  .our-fleet {
     .nextslide {
-      right: -20px;
+      position: absolute;
+      right: -50px;
     }
+
     .prevslide {
-      left: -20px;
+      position: absolute;
+      left: -50px;
     }
-
+    .carousel-inner{
+      width: 100%;
+    }
   }
-
+}
 @media screen and(max-width: 1140px) {
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     left: 0;
@@ -929,17 +934,10 @@
   }
   .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text, .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text {
     left: 0;
-    font-size: 1rem;
     height: 45%;
     p:first-of-type{
       margin-top: 0;
     }
-  }
-  .our-fleet__cars-block .nextslide {
-    right: 0;
-  }
-  .our-fleet__cars-block .prevslide {
-    left: 0;
   }
 }
 
@@ -1028,5 +1026,8 @@
         width: 20px;
       }
     }
+  }
+  .our-fleet .our-fleet__cars-block .our-fleet__about-cars__item3 .car-params-text p:first-of-type, .our-fleet .our-fleet__cars-block .our-fleet__about-cars__item2 .car-params-text p:first-of-type, .our-fleet .our-fleet__cars-block .our-fleet__about-cars__item1 .car-params-text p:first-of-type{
+    margin-top: 0;
   }
 }
